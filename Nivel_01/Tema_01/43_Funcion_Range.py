@@ -1,14 +1,14 @@
 # Paso 01: Importar librerias y declarar variables
 import arcpy
 
-# Importar libreria de math(matemáticas)
+# Importar libreria de math(matematicas)
 import math
 
 # Sobreescribir los resultados
 arcpy.env.overwrithOutput = True
 
 # Especificar el FC a trabajar ------------> CentralesHidroelectricas
-fc = r"D:\Este Equipo\OneDrive\Cursos\GIS-Python\Nivel_01\Tema_14\GDB\Practica.gdb\CentralesHidroelectricas"
+fc = r"D:\Proyectos\GIS_Python_1\Nivel_01\Tema_14\GDB\Practica.gdb\CentralesHidroelectricas"
 
 # Obtener la informacion tabular del FC ------------> CentralesHidroelectricas
 table = arcpy.SearchCursor(fc)
@@ -33,3 +33,9 @@ for rows in table:
 # Calcular el rango - Declaramos variable rango
 rango = int(max(potencia)-min(potencia))
 # print "El rango es: ", rango
+
+# Paso 04: Calcular el numero de intervalos
+
+# Calcular el numero de intervalos, aplicando la regla de Sturges (k = 1+3.3*log10(n)) # de registros
+numeroIntervalos = int(round(1+3.2*math.log10(len(potencia))))
+print "El numero de intervalos es: ", numeroIntervalos
