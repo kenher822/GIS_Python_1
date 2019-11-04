@@ -16,5 +16,5 @@ Distancia = arcpy.GetParameterAsText(2)
 # Herramienta de geoprocesamiento
 arcpy.Buffer_analysis(CapaEntrada, CapaSalida, Distancia)
 
-# Impresión de resultado final
+# Impresiï¿½n de resultado final
 arcpy.AddMessage("Proceso finalizado")

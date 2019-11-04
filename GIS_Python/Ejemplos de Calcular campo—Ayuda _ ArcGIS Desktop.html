@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm -->
+<html dir="ltr"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="async" src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/s4432370136781"></script>
+        
+        <title>Ejemplos de Calcular campo—Ayuda | ArcGIS Desktop</title>
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/satelliteLib-0ed1001fd441a838aefe8e755be42aaafddcc46b.js.descargar"></script>
+        <script>
+          var docConfig = {
+            locale: 'es',
+            localedir: 'es',
+            langSelector: 'none'
+          };
+        </script>
+
+        <!--[if lt IE 9]>
+          <script src="/cdn/js/libs/html5shiv.js?1357673785" type="text/javascript"></script>
+          <script src="/cdn/js/libs/selectivizr-min.js" type="text/javascript"></script>
+          <style>
+            #wrapper {
+              min-width: 960px;
+            }
+          </style>
+        <![endif]-->
+
+
+   <link type="text/css" rel="stylesheet" href="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/3706abc4-0756-424b-b07b-1748122f85d8.css">
+   <link rel="shortcut icon" href="http://desktop.arcgis.com/img/favicon.ico">
+   <link href="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/screen.css" media="screen" rel="stylesheet" type="text/css">
+   <link href="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/documentation.css" media="screen" rel="stylesheet" type="text/css">
+   <link href="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/codehilight.css" media="screen" rel="stylesheet" type="text/css">
+   <link href="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/print.css" media="print" type="text/css" rel="stylesheet">
+
+      <!--[if lt IE 9]><script type="text/javascript" src="/cdn/js/libs/html5shiv-printshiv.js"></script><![endif]-->
+
+       <!--- search MD -->
+       <meta name="description" content="Ejemplos de código para la herramienta de geoprocesamiento de ArcGIS Calcular campo."><meta name="last-modified" content="2018-11-9"><meta name="product" content="arcgis-desktop,arcgis-server-windows,arcgis-server-linux"><meta name="sub_category" content="Datatypes (Tables)"><meta name="search-collection" content="help"><meta name="content_type_label" content="Tema de ayuda"><meta name="sub_category_label" content="Datatypes (Tables)"><meta name="search-category" content="help-general"><meta name="subject_label" content="DATA MANAGEMENT"><meta name="version" content="10.3"><meta name="content_type" content="Help Topic"><meta name="subject" content="DATA MANAGEMENT"><meta name="content-language" content="es">
+       <!--- search MD -->
+
+      
+
+   <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/jquery.1.9.1.min.js.descargar" type="text/javascript"></script>
+   <link href="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/colorbox.css" media="screen" rel="stylesheet" type="text/css">
+   <link href="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/colorbox_l10n.css" media="screen" rel="stylesheet" type="text/css">
+   <link href="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/codehilight_l10n.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/jquery.colorbox-min.js.descargar" type="text/javascript"></script>
+  <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/video-init.js.descargar" type="text/javascript"></script>
+  <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/sitecfg.js.descargar" type="text/javascript"></script>
+
+       
+      <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/signIn.js.descargar" type="text/javascript"></script>
+    
+
+       <!--- Language Picker -->
+      <link type="text/css" rel="stylesheet" href="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/langSelector.css">
+      <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/l10NStrings.js.descargar" type="text/javascript"></script>
+      <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/langSelector.js.descargar" type="text/javascript"></script>
+      <!--- Language Picker -->
+      <!--- Activate tailcoat JS components -->
+       <script>
+         $(document).ready(function(){
+          T.init();
+        });
+      </script>
+
+
+       
+    <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/satellite-5afa117d64746d5998007a14.js.descargar"></script><script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/s-code-contents-4aefdae3bc830a1a6e55f51b0e942680d69005c4.js.descargar"></script><style type="text/css">:root topadblock, :root input[onclick^="window.open('http://www.FriendlyDuck.com/"], :root img[alt^="Fuckbook"], :root iframe[src^="http://static.mozo.com.au/strips/"], :root iframe[src^="http://cdn2.adexprt.com/"], :root iframe[id^="google_ads_iframe"], :root header#hdr + #main > div[data-hveid], :root div[id^="zergnet-widget"], :root div[id^="q1-adset-"], :root div[id^="mainads"], :root div[id^="dmRosAdWrapper"], :root a[href^="http://at.atwola.com/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root div[id^="div-ads-"], :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://www1.clickdownloader.com/"], :root div[id^="cns_ads_"], :root #\5f _admvnlb_modal_container, :root div[id^="adspot-"], :root input[onclick^="window.open('http://www.friendlyduck.com/"], :root div[id^="ads300_250-widget"], :root div[id^="ads250_250-widget"], :root div[id^="adrotate_widgets-"], :root div[id^="adfox_"], :root div[id^="ad_script_"], :root #content > #right > .dose > .dosesingle, :root div[id^="ad_bigbox_"], :root div[id^="ad-server-"], :root div[id^="acm-ad-tag-"], :root div[id^="ADV-SLOT-"], :root div[data-native_ad], :root a[href^=" http://n47adshostnet.com/"], :root div[data-id^="CarouselPLA-"] > .kzwEHf, :root div[class^="proadszone-"], :root div[class^="pane-google-admanager-"], :root a[href^="http://adultgames.xxx/"], :root a[href^="http://semi-cod.com/clicks/"], :root div[class^="index_displayAd_"], :root a[href^="http://www.affbuzzads.com/affiliate/"], :root div[class^="index_adBeforeContent_"], :root div[class^="index_adAfterContent_"], :root div[class^="block-openx-"], :root div[class^="ads-partner-"], :root div[class^="ad_position_"], :root div[class^="ad_border_"], :root a[href^="http://adprovider.adlure.net/"], :root div[class^="Ad__container"], :root div[id^="div-adtech-ad-"], :root div[class*="_AdInArticle_"], :root div > [class][onclick*=".updateAnalyticsEvents"], :root a[href^="http://internalredirect.site/"], :root bottomadblock, :root a[href^="https://watchmygirlfriend.tv/"], :root a[href^="http://2pxg8bcf.top/"], :root aside[itemtype="https://schema.org/WPAdBlock"], :root a[href^="http://c.actiondesk.com/"], :root aside[id^="div-gpt-ad"], :root div[id^="ad-cid-"], :root a[href^="http://lp.ezdownloadpro.info/"], :root a[href^="http://uploaded.net/ref/"], :root aside[id^="advads_ad_widget-"], :root aside[id^="adrotate_widgets-"], :root a[target="_blank"][href^="http://api.taboola.com/"], :root a[style="display:block;width:300px;min-height:250px"][href^="http://li.cnet.com/click?"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="http://popup.taboola.com/"], :root a[href^="//adbit.co/?a=Advertise&"], :root a[onmousedown^="this.href='/wp-content/embed-ad-content/"], :root div[class^="AdhesionAd_"], :root div[class^="Ad__bigBox"], :root div[role="navigation"] + c-wiz > script + div > .kxhcC, :root a[onclick*="//m.economictimes.com/etmack/click.htm"], :root a[href^="https://www.what-sexdating.com/"], :root a[href^="https://www.travelzoo.com/oascampaignclick/"], :root a[href^="https://www.share-online.biz/affiliate/"], :root a[href^="https://www.securegfm.com/"], :root div[id^="advads_"], :root a[href^="https://www.moscarossa.biz/"], :root a[href^="http://www.usearchmedia.com/signup?"], :root a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="https://www.incontri-matura.com/"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root .trc_related_container div[data-item-syndicated="true"], :root a[href^="https://www.firstload.com/affiliate/"], :root a[href^="https://www.camyou.com/?cam="][href*="&track="], :root a[href^="https://www.bebi.com"], :root a[href^="https://www.adskeeper.co.uk/"], :root a[href^="http://pan.adraccoon.com?"], :root div[id^="ad-gpt-"], :root a[href^="http://farm.plista.com/pets"], :root a[href^="https://windscribe.com/promo/"], :root a[href^="http://serve.williamhill.com/promoRedirect?"], :root a[href^="https://vodexor.us/"], :root div[id^="tms-ad-dfp-"], :root a[href^="https://trust.zone/go/r.php?RID="], :root a[href^="https://track.adform.net/"], :root a[href^="https://traffic.bannerator.com/"], :root a[href^="https://tracking.truthfinder.com/?a="], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href^="https://track.healthtrader.com/"], :root a[href^="https://track.clickmoi.xyz/"], :root a[href^="https://track.afftck.com/"], :root a[href^="https://control.trafficfabrik.com/"], :root a[href^="https://track.52zxzh.com/"], :root div[class^="gemini-ad"], :root a[href^="http://pwrads.net/"], :root a[href^="//oardilin.com/"], :root a[href^="http://gca.sh/user/register?ref="], :root a[href^="https://torguard.net/aff.php"], :root a[href^="http://tour.affbuzzads.com/"], :root a[href^="https://tc.tradetracker.net/"], :root a[href^="https://t.mobtya.com/"], :root a[href^="https://t.grtyi.com/"], :root aside[id^="tn_ads_widget-"], :root a[href^="https://syndication.exoclick.com/splash.php?"], :root a[href^="http://click.guamwnvgashbkashawhgkhahshmashcas.pw/"], :root div[id^="YFBMSN"], :root div[id^="ad-div-"], :root a[href^="https://secure.eveonline.com/ft/?aid="], :root a[href^="https://rev.adsession.com/"], :root a[href^="https://retiremely.com/"], :root div[id^="yandex_ad"], :root a[href^="http://y1jxiqds7v.com/"], :root a[href^="https://www.pornhat.com/"][rel="nofollow"], :root AD-SLOT, :root a[href^="http://green.trafficinvest.com/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"], :root a[href^="https://mk-cdn.net/"], :root div[id^="proadszone-"], :root a[href^="https://mk-ads.com/"], :root a[href^="https://jmp.awempire.com/"], :root a[href^="https://members.linkifier.com/public/affiliateLanding?refCode="], :root a[href^="https://medleyads.com/"], :root div[id^="ads300_100-widget"], :root a[href^="https://click.plista.com/pets"], :root a[href^="https://lingthatsparleso.info/"], :root a[href^="https://laptop-updates.brave.com/download/"], :root a[href*=".approvallamp.club/"], :root a[href^="https://landing1.brazzersnetwork.com"], :root a[href^="https://land.rk.com/landing/"], :root .lads[width="100%"][style="background:#FFF8DD"], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root a[href^="https://incisivetrk.cvtr.io/click?"], :root a[href^="https://iactrivago.ampxdirect.com/"], :root a[href^="https://googleads.g.doubleclick.net/pcs/click"], :root a[href^="http://cdn.adstract.com/"], :root a[href^="https://gogoman.me/"], :root a[href^="https://go.stripchat.com/"][href*="&campaignId="], :root a[href*=".inclk.com/"], :root a[href^="https://go.ad2up.com/"], :root a[href^="https://freeadult.games/"], :root a[href^="//nlkdom.com/"], :root a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"], :root a[href^="https://fonts.fontplace9.com/"], :root a[href^="http://clkmon.com/adServe/"], :root a[href^="https://flirtaescopa.com/"], :root a[href^="https://farm.plista.com/pets"], :root a[href^="https://evaporate.pw/"], :root a[href^="http://wxdownloadmanager.com/dl/"], :root div[class^="local-feed-banner-ads"], :root .GFYY1SVE2 > .GFYY1SVD2 > .GFYY1SVG5, :root a[href^="https://djtcollectorclub.org/"][href*="?affiliate_id="], :root a[href^="https://chaturbate.xyz/"], :root a[href^="https://chaturbate.jjgirls.com/"][href*="?tour="], :root a[href^="https://chaturbate.com/in/?tour="], :root a[href^="https://chaturbate.com/affiliates/"], :root a[href^="http://www.1clickdownloader.com/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="https://awentw.com/"], :root a[href^="https://servedbyadbutler.com/"], :root a[href^="http://dethao.com/"], :root a[href^="https://ads.ad4game.com/"], :root a[href^="https://betway.com/"][href*="&a="], :root a[href^="https://affiliates.bet-at-home.com/processing/"], :root a[href*="pussl3.com"], :root a[href^="https://adswick.com/"], :root ADS-RIGHT, :root .GKJYXHBF2 > .GKJYXHBE2 > .GKJYXHBH5, :root a[href^="https://adserver.adreactor.com/"], :root a[href^="https://refpaano.host/"], :root a[href^="http://data.linoleictanzaniatitanic.com/"], :root a[href^="https://adhealers.com/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="http://zevera.com/afi.html"], :root a[href^="http://go.oclaserver.com/"], :root a[href^="https://ad.atdmt.com/"], :root .trc_rbox .syndicatedItem, :root a[href^="https://aaucwbe.com/"], :root a[href^="https://a.adtng.com/"], :root a[href^="http://xtgem.com/click?"], :root a[href^="https://ads.trafficpoizon.com/"], :root a[href^="http://rekoverr.com/"], :root a[href^="https://chaturbate.com/in/?track="], :root a[href^="http://www.zergnet.com/i/"], :root a[href^="http://hyperies.info/"], :root a[href^="http://galleries.pinballpublishernetwork.com/"], :root a[href^="http://www.torntv-downloader.com/"], :root a[href^="http://www.tirerack.com/affiliates/"], :root a[href^="http://www.text-link-ads.com/"], :root a[href^="http://www.friendlyquacks.com/"], :root div[id^="div_openx_ad_"], :root a[href^="http://www.streamate.com/exports/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="http://www.sfippa.com/"], :root a[href^="http://www.xmediaserve.com/"], :root a[href^="http://www.sex.com/videos/?utm_"], :root a[href^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://www.sex.com/?utm_"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="http://www.roboform.com/php/land.php"], :root a[href^="http://www.myfreecams.com/?co_id="][href*="&track="], :root div[id^="advads-"], :root a[href^="https://k2s.cc/pr/"], :root a[href^="http://ad.au.doubleclick.net/"], :root a[href^="http://www.ringtonematcher.com/"], :root a[href^="http://secure.signup-page.com/"], :root a[href^="http://www.quick-torrent.com/download.html?aff"], :root a[href^="http://adexprt.me/"], :root a[href^="http://www.pinkvisualgames.com/?revid="], :root a[href^="https://trklvs.com/"], :root a[href^="http://www.paddypower.com/?AFF_ID="], :root div[data-spotim-slot], :root a[href^="http://www.freefilesdownloader.com/"], :root a[href^="http://www.mysuperpharm.com/"], :root .trc_rbox_border_elm .syndicatedItem, :root a[href^="http://www.myfreepaysite.com/sfw_int.php?aid"], :root a[href^="http://www.myfreepaysite.com/sfw.php?aid"], :root .rhsvw[style="background-color:#fff;margin:0 0 14px;padding-bottom:1px;padding-top:1px;"], :root a[href^="http://www.moneyducks.com/"], :root a[href^="http://bcntrack.com/"], :root a[href^="http://www.securegfm.com/"], :root a[href^="http://www.liversely.net/"], :root a[href^="http://www.linkbucks.com/referral/"], :root a[href^="//88d7b6aa44fb8eb.com/"], :root a[href^="http://www.ireel.com/signup?ref"], :root a[href*="=Adtracker"], :root a[href^="http://www.incredimail.com/?id="], :root a[href^="http://www.idownloadplay.com/"], :root a[href^="http://www.hitcpm.com/"], :root a[href^="http://www.greenmangaming.com/?tap_a="], :root a[href^="http://www.gamebookers.com/cgi-bin/intro.cgi?"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href*="emprestimo.eu"], :root a[href^="http://www.fpcTraffic2.com/blind/in.cgi?"], :root a[href^="http://www.fonts.com/BannerScript/"], :root a[href^="http://www.fleshlight.com/"], :root a[href^="http://www.flashx.tv/downloadthis"], :root .trc_rbox_div a[target="_blank"][href^="http://tab"], :root a[href^="https://americafirstpolls.com/"], :root a[href^="http://clickserv.sitescout.com/"], :root a[href^="http://www.firstload.de/affiliate/"], :root a[href^="http://www.twinplan.com/AF_"], :root a[href^="http://www.fducks.com/"], :root a[href^="http://marketgid.com"], :root a[href^="http://www.faceporn.net/free?"], :root a[href^="http://www.epicgameads.com/"], :root a[href^="http://www.easydownloadnow.com/"], :root a[href^="http://www.duckssolutions.com/"], :root a[href^="https://go.trkclick2.com/"], :root a[href^="http://www.duckcash.eu/"], :root a[href^="http://www.drowle.com/"], :root a[href^="http://go.seomojo.com/tracking202/"], :root a[href^="http://www.downloadweb.org/"], :root .commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > .vci, :root a[href^="http://www.installads.net/"], :root div[role="navigation"] + c-wiz > div > .kxhcC, :root a[href^="http://www.download-provider.org/"], :root a[href^="http://www.down1oads.com/"], :root a[href^="https://trafficmedia.center/"], :root a[href^="http://www.dealcent.com/register.php?affid="], :root .rscontainer > .ellip, :root a[href^="http://www.clkads.com/adServe/"], :root a[href^="http://www.clickansave.net/"], :root div[class^="adpubs-"], :root a[href*="deliver.trafficfabrik.com"], :root a[href^="http://www.cash-duck.com/"], :root a[href^="http://www.bitlord.me/share/"], :root a[href^="http://www.bet365.com/"][href*="?affiliate="], :root a[href^="http://www.bet365.com/"][href*="&affiliate="], :root a[href^="http://www.badoink.com/go.php?"], :root #mbEnd[cellspacing="0"][cellpadding="0"], :root div[data-ad-underplayer], :root a[href^="http://www.richducks.com/"], :root a[href^="http://www.babylon.com/welcome/index?affID"], :root a[href^="http://www.sexgangsters.com/?pid="], :root a[href^="http://www.amazon.co.uk/exec/obidos/external-search?"], :root a[href^="https://ads-for-free.com/click.php?"], :root a[href^="http://tracker.mybroadband.co.za/"], :root a[href^="http://www.socialsex.com/"], :root a[href^="https://www.camsoda.com/enter.php?id="], :root a[href^="http://www.afco2go.com/srv.php?"], :root a[href^="http://go.ad2up.com/"], :root a[href^="https://badoinkvr.com/"], :root a[href*="/adServe/banners?"], :root a[href^="http://www.adxpansion.com"], :root a[href^="http://www.ragazzeinvendita.com/?rcid="], :root .plistaList > .itemLinkPET, :root a[href^="http://ads.pheedo.com/"], :root a[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"], :root a[href^="http://www.TwinPlan.com/AF_"], :root #rhs_block .mod > .gws-local-hotels__booking-module, :root a[href^="http://www.my-dirty-hobby.com/?sub="], :root a[href^="https://porndeals.com/?track="], :root a[href^="http://www.affiliates1128.com/processing/"], :root a[href^="http://c.jumia.io/"], :root a[href^="http://www.1clickmoviedownloader.info/"], :root div[class^="adbanner_"], :root a[href^="http://www.brightwheel.info/"], :root a[href^="http://www.123-reg.co.uk/affiliate2.cgi"], :root div[id^="lazyad-"], :root div[itemtype="http://www.schema.org/WPAdBlock"], :root a[href^="http://wopertific.info/"], :root a[href^="http://bodelen.com/"], :root a[href^="http://wgpartner.com/"], :root a[href^="http://webgirlz.online/landing/"], :root div[id^="ads300_600-widget"], :root div[class^="Ad__adContainer"], :root a[href^="http://web.adblade.com/"], :root div[class^="BlockAdvert-"], :root a[href^="https://go.onclasrv.com/"], :root a[href^="http://wct.link/"], :root a[href^="http://s9kkremkr0.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="http://us.marketgid.com"], :root a[href^="http://ul.to/ref/"], :root a[href^="http://trk.mdrtrck.com/"], :root a[href*=".ichlnk.com/"], :root div[id^="div_ad_stack_"], :root a[href^="http://traffic.tc-clicks.com/"], :root div[class^="awpcp-random-ads"], :root a[href^="http://www.graboid.com/affiliates/"], :root a[href^="http://tracking.toroadvertising.com/"], :root a[href^="http://www.liutilities.com/"], :root a[href^="http://www.dl-provider.com/search/"], :root a[href^="http://tracking.deltamediallc.com/"], :root a[href^="http://adultfriendfinder.com/p/register.cgi?pid="], :root a[href^="https://www.popads.net/users/"], :root iframe[src^="http://ad.yieldmanager.com/"], :root a[href^="http://pubads.g.doubleclick.net/"], :root a[href^="https://sexdatingz.live/"], :root a[href^="//bwnjijl7w.com/"], :root a[href^="https://adultfriendfinder.com/go/page/landing"], :root a[href^="http://tracking.crazylead.com/"], :root a[href^="http://track.adform.net/"], :root a[href^="https://iac.ampxdirect.com/"], :root a[href^="http://t.mdn2015x3.com/"], :root a[href^="http://steel.starflavor.bid/"], :root a[href^="http://galleries.securewebsiteaccess.com/"], :root a[href^="http://stateresolver.link/"], :root a[href^="http://sharesuper.info/"], :root a[href^="http://server.cpmstar.com/click.aspx?poolid="], :root a[href^="http://www.downloadthesefiles.com/"], :root a[href^="http://secure.cbdpure.com/aff/"], :root a[href^="http://t.mdn2015x1.com/"], :root a[href^="http://azmobilestore.co/"], :root a[href^="http://s5prou7ulr.com/"], :root a[href*="/cmd.php?ad="], :root a[href^="http://refpaano.host/"], :root #\5f _mom_ad_2, :root a[href^="http://ads.sprintrade.com/"], :root a[href^="http://record.commissionking.com/"], :root div[class*="-storyBodyAd-"], :root a[href^="http://record.betsafe.com/"], :root a[href^="https://keep2share.cc/pr/"], :root a[href^="https://clixtrac.com/"], :root [onclick*="content.ad/"], :root a[href^="http://adlev.neodatagroup.com/"], :root a[href^="http://reallygoodlink.extremefreegames.com/"], :root .ob_container .item-container-obpd, :root a[href^="http://www.adskeeper.co.uk/"], :root a[href^="http://websitedhoome.com/"], :root a[href^="http://see-work.info/"], :root a[href^="http://prousa.work/"], :root a[href^="http://promos.bwin.com/"], :root a[href^="http://prochina.link/"], :root a[href*=".irtyc.com/"], :root a[href^="http://z1.zedo.com/"], :root a[href^="http://pokershibes.com/index.php?ref="], :root #rhs_block .mod > .luhb-div > div[data-async-type="updateHotelBookingModule"], :root a[href^="http://mojofun.info/"], :root a[href^="http://mmo123.co/"], :root a[href^="http://media.paddypower.com/redirect.aspx?"], :root a[href*=".qertewrt.com/"], :root a[href^="//pubads.g.doubleclick.net/"], :root a[href^="http://lp.ncdownloader.com/"], :root #rhs_block .xpdopen > ._OKe > div > .mod > ._yYf, :root a[href^="//ads.ad-center.com/"], :root a[href^="https://track.trkinator.com/"], :root a[data-redirect^="this.href='http://paid.outbrain.com/network/redir?"], :root div[id^="ad-position-"], :root a[href^="http://liversely.com/"], :root a[href^="https://www.arthrozene.com/"][href*="?tid="], :root a[href^="http://feeds1.validclick.com/"], :root a[href^="http://latestdownloads.net/download.php?"], :root a[href^="http://k2s.cc/code/"], :root #topstuff > #tads, :root a[href^="https://atomidownload.com/"], :root a[href*=".bang.com/"][href*="&aff="], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://join3.bannedsextapes.com/track/"], :root a[href^="https://secure.bstlnk.com/"], :root a[href^="http://jobitem.org/"], :root a[href^="https://gamescarousel.com/"], :root a[href^="http://istri.it/?"], :root a[href^="http://www.fbooksluts.com/"], :root a[href^="http://www.cdjapan.co.jp/aff/click.cgi/"], :root a[href^="//api.ad-goi.com/"], :root a[href*="//ridingintractable.com/"], :root a[href^="http://intent.bingads.com/"], :root div[id^="crt-"][style], :root a[href^="http://igromir.info/"], :root a[href^="https://track.themadtrcker.com/"], :root a[href^="http://hyperlinksecure.com/go/"], :root a[href^="http://45eijvhgj2.com/"], :root a[href^="http://hpn.houzz.com/"], :root a[href^="http://searchtabnew.com/"], :root a[href*="?adlivk="][href*="&refer="], :root a[href^="//look.djfiln.com/"], :root a[href^="http://greensmoke.com/"], :root a[href^="https://bnsjb1ab1e.com/"], :root a[href^="http://mo8mwxi1.com/"], :root div[class^="ResponsiveAd-"], :root a[href^="http://install.securewebsiteaccess.com/"], :root a[href^="http://www.revenuehits.com/"], :root div[id^="block-views-topheader-ad-block-"], :root a[href^="https://bs.serving-sys.com"], :root .__y_elastic .__y_item, :root a[href^="http://go.mobisla.com/"], :root a[href^="//srv.buysellads.com/"], :root a[href^="http://g1.v.fwmrm.net/ad/"], :root .widget-pane-section-result[data-result-ad-type], :root a[href^="http://imads.integral-marketing.com/"], :root a[href^="http://freesoftwarelive.com/"], :root a[href^="http://adtrackone.eu/"], :root a[href^="http://finaljuyu.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="http://fileupnow.rocks/"], :root a[href^="http://fileloadr.com/"], :root a[href^="https://dltags.com/"], :root a[href^="http://onclickads.net/"], :root a[href^="https://gghf.mobi/"], :root a[href^="http://www.terraclicks.com/"], :root a[href^="http://www.coinducks.com/"], :root a[href^="http://extra.bet365.com/"][href*="?affiliate="], :root a[href^="http://ethfw0370q.com/"], :root [id^="bunyad_ads_"], :root a[href^="http://elitefuckbook.com/"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root #cnt #center_col > #taw > #tvcap > .c._oc._Lp, :root [href*="//xml.revrtb.com/"], :root a[href^="http://elite-sex-finder.com/?"], :root a[href^="http://eclkmpsa.com/"], :root a[href*="//3wr110.xyz/"], :root a[href^="http://earandmarketing.com/"], :root a[href^="https://www.mypornstarcams.com/landing/click/"], :root a[href*=".intab.fun/"], :root a[href^="http://secure.signup-way.com/"], :root [href^="https://maskip.co/"], :root a[href^="http://getlinksinaseconds.com/"], :root #content > #center > .dose > .dosesingle, :root a[href^="http://campaign.bharatmatrimony.com/track/"], :root a[href^="http://d2.zedo.com/"], :root a[href^="http://keep2share.cc/pr/"], :root a[href^="http://cp.cbbp1.com"], :root a[href^="http://contractallsticker.net/"], :root a[href^="http://codec.codecm.com/"], :root div[id^="google_dfp_"], :root a[href^="//5e1fcb75b6d662d.com/"], :root a[href^="http://googleads.g.doubleclick.net/pcs/click"], :root div[id^="ads120_600-widget"], :root a[href^="https://awejmp.com/"], :root a[href^="http://clk.directrev.com/"], :root a[href^="http://refer.webhostingbuzz.com/"], :root a[href^="http://clicks.guamwnvgashbkashawhgkhahshmashcas.pw/"], :root a[href^="http://www.downloadplayer1.com/"], :root a[href^="http://clicks.binarypromos.com/"], :root div[class^="largeRectangleAd_"], :root a[href^="https://dediseedbox.com/clients/aff.php?"], :root a[href^="http://www.wantstraffic.com/"], :root a[href^="http://databass.info/"], :root a[href^="http://www.urmediazone.com/signup"], :root a[href^="http://click.plista.com/pets"], :root a[href^="https://a.bestcontentpc.top/"], :root a[href^="http://chaturbate.com/affiliates/"], :root a[href^="http://www.firstload.com/affiliate/"], :root a[href^="http://www.friendlyadvertisements.com/"], :root a[href^="//00ae8b5a9c1d597.com/"], :root a[href^="http://cdn3.adbrau.com/"], :root a[href^="http://get.slickvpn.com/"], :root a[href^="http://amzn.to/"] > img[src^="data"], :root a[href^="http://bs.serving-sys.com/"], :root a[href^="http://cpaway.afftrack.com/"], :root a[href^="http://cdn.adsrvmedia.net/"], :root [lazy-ad="top_banner"], :root a[href^="http://360ads.go2cloud.org/"], :root a[href^="http://dftrck.com/"], :root a[href^="http://casino-x.com/?partner"], :root div[data-flt-ve="sponsored_search_ads"], :root a[href^="http://record.sportsbetaffiliates.com.au/"], :root a[href^="http://campeeks.com/"][href*="&utm_"], :root #flowplayer > div[style="position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px; z-index: 999;"], :root a[href^="http://download-performance.com/"], :root a[href^="http://www.on2url.com/app/adtrack.asp"], :root #\5f _nq__hh[style="display:block!important"], :root a[href^="http://guideways.info/"], :root a[href^="http://campaign.bharatmatrimony.com/cbstrack/"], :root a[href^="http://ads.expekt.com/affiliates/"], :root a[href^="http://callville.xyz/"], :root a[href^="http://xads.zedo.com/"], :root a[href^="http://yads.zedo.com/"], :root a[href^="https://bullads.net/get/"], :root a[href^="http://down1oads.com/"], :root a[href^="http://buysellads.com/"], :root a[href^="https://uncensored.game/"], :root td[valign="top"] > .mainmenu[style="padding:10px 0 0 0 !important;"], :root a[href^="http://feedads.g.doubleclick.net/"], :root a[href^="http://betahit.click/"], :root a[href^="http://bestorican.com/"], :root a[href^="http://bcp.crwdcntrl.net/"], :root a[href^="http://bc.vc/?r="], :root a[href^="http://www.pheedo.com/"], :root a[href^="http://banners.victor.com/processing/"], :root a[href^="http://adf.ly/?id="], :root a[href^="https://uncensored3d.com/"], :root a[href^="http://t.mdn2015x2.com/"], :root div[data-subscript="Advertising"], :root div[class$="dealnews"] > .dealnews, :root a[href^="http://click.payserve.com/"], :root a[href^="http://api.ringtonematcher.com/"], :root a[href^="http://affiliate.glbtracker.com/"], :root a[href^="https://transfer.xe.com/signup/track/redirect?"], :root a[href^="http://anonymous-net.com/"], :root a[href^="https://www.dsct1.com/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root .icons-rss-feed + .icons-rss-feed div[class$="_item"], :root a[href^="http://aflrm.com/"], :root a[href^="http://affiliates.pinnaclesports.com/processing/"], :root a[href^="http://affiliate.godaddy.com/"], :root a[href^="http://partner.sbaffiliates.com/"], :root a[href^="http://affiliate.coral.co.uk/processing/"], :root a[href^="http://aff.ironsocket.com/"], :root a[href^="http://adsrv.keycaptcha.com"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root a[href^="http://play4k.co/"], :root a[href^="http://adserving.liveuniversenetwork.com/"], :root a[href^="https://zononi.com/"], :root a[href^="http://adserving.unibet.com/"], :root a[href^="http://adtransfer.net/"], :root a[href^="http://adserver.itsfogo.com/"], :root a[href^="https://secure.adnxs.com/clktrb?"], :root a[href^="http://adserver.adtechus.com/"], :root a[href^="http://adserver.adreactor.com/"], :root a[href^="http://www.yourfuckbook.com/?"], :root a[href^="//go.onclasrv.com/"], :root .GHOFUQ5BG2 > .GHOFUQ5BF2 > .GHOFUQ5BG5, :root .__ywvr .__y_item, :root #\5f _mom_ad_12, :root a[href^="http://ads.integral-marketing.com/"], :root a[href^="http://adserver.adtech.de/"], :root a[href^="http://cwcams.com/landing/click/"], :root a[href^="http://ads.betfair.com/redirect.aspx?"], :root a[href^="http://ads.affbuzzads.com/"], :root a[href^="http://tc.tradetracker.net/"], :root a[href^="http://online.ladbrokes.com/promoRedirect?"], :root a[href^="http://go.trafficshop.com/"], :root a[href^="http://ads.ad-center.com/"], :root div[id^="advt-"], :root a[href^="http://admingame.info/"], :root a[href^="http://adfarm.mediaplex.com/"], :root a[href^="http://ad.doubleclick.net/"], :root a[href^="https://understandsolar.com/signup/?lead_source="][href*="&tracking_code="], :root a[href^="http://ad-emea.doubleclick.net/"], :root a[href^="http://www.incredimail.com/?id"], :root a[href*="/servlet/click/zone?"], :root a[href^="http://ad-apac.doubleclick.net/"], :root script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content, :root a[href^="http://hdplugin.flashplayer-updates.com/"], :root .trc_rbox_div .syndicatedItem, :root a[href^="http://data.ad.yieldmanager.net/"], :root a[href^="http://a63t9o1azf.com/"], :root a[href^="http://srvpub.com/"], :root a[href^="http://a.adquantix.com/"], :root a[href^="http://NowDownloadAll.com"], :root #assetsListings[style="display: block;"], :root a[href^="http://9nl.es/"], :root a[href^="http://abc2.mobile-10.com/"], :root a[href^="http://adtrack123.pl/"], :root [id*="MGWrap"], :root a[href^="http://9amq5z4y1y.com/"], :root a[href^="http://4c7og3qcob.com/"], :root a[href^="//go.vedohd.org/"], :root a[href^="http://www.ducksnetwork.com/"], :root a[href^="http://3wr110.net/"], :root a[href^="http://www5.smartadserver.com/call/pubjumpi/"], :root a[href^="http://1phads.com/"], :root #MAIN.ShowTopic > .ad, :root a[href^="https://porngames.adult/?SID="], :root a[href^="http://findersocket.com/"], :root a[href^="https://m.do.co/c/"] > img, :root a[href^="http://connectlinking6.com/"], :root a[href^="https://spygasm.com/track?"], :root a[href^="http://cdn3.adexprts.com/"], :root #tads + div + .c, :root a[href^="//jsmptjmp.com/"], :root a[href^="https://ilovemyfreedoms.com/"][href*="?affiliate_id="], :root a[href^="//healthaffiliate.center/"], :root a[href^="http://games.ucoz.ru/"][target="_blank"], :root [id*="ScriptRoot"], :root a[href^="//db52cc91beabf7e8.com/"], :root a[href^="http://ads.activtrades.com/"], :root div[id^="drudge-column-ads-"], :root .plistaList > .plista_widget_underArticle_item[data-type="pet"], :root #center_col > #taw > #tvcap > .commercial-unit-desktop-top, :root a[href^="http://www.afgr2.com/"], :root #mn div[style="position:relative"] > #center_col > ._Ak, :root a[href^="https://www.oboom.com/ad/"], :root a[href^="//4f6b2af479d337cf.com/"], :root a[href^="https://www.friendlyduck.com/AF_"], :root #center_col > #resultStats + div + #res + #tads, :root a[href^="//40ceexln7929.com/"], :root div[id^="div-gpt-ad"], :root a[href^="http://fusionads.net"], :root a[href^=" http://www.sex.com/"][href*="&utm_"], :root .section-result[data-result-ad-type], :root a[href^=" http://ads.ad-center.com/"], :root div[id^="dfp-slot-"], :root .l-container > #fishtank, :root a[href^="https://fileboom.me/pr/"], :root .GPMV2XEDA2 > .GPMV2XEDP1 > .GPMV2XEDJBB, :root a[href*="onclkds."], :root #ads > .dose > .dosesingle, :root a[href*="delivery.trafficfabrik.com"], :root a[href*="=exoclick"], :root div[class^="backfill-taboola-home-slot-"], :root a[href*="=adscript"], :root #mn #center_col > div > h2.spon:first-child, :root FBS-AD, :root .ra[align="right"][width="30%"], :root a[href*="5iclx7wa4q.com"], :root a[href*=".revimedia.com/"], :root [lazy-ad="leftbottom_banner"], :root p[id^="div-gpt-ad-"], :root a[href^="http://fsoft4down.com/"], :root a[href*="ad2upapp.com/"], :root .inlineNewsletterSubscription + .inlineNewsletterSubscription div[class$="_item"], :root #taw > .med + div > #tvcap > .mnr-c:not(.qs-ic) > .commercial-unit-mobile-top, :root .plista_widget_belowArticleRelaunch_item[data-type="pet"], :root div[data-mediatype="advertising"], :root .mw > #rcnt > #center_col > #taw > #tvcap > .c, :root a[href^="https://playuhd.host/"], :root a[href^="http://mgid.com/"], :root a[href*=".adsrv.eacdn.com/"] > img, :root a[href^="http://lp.ilivid.com/"], :root a[href^="http://secure.hostgator.com/~affiliat/"], :root [onclick^="window.open('http://adultfriendfinder.com/search/"], :root a[href^="http://data.committeemenencyclopedicrepertory.info/"], :root a[href*=".allsports4you.club"], :root a[href^="http://spygasm.com/track?"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root a[href*=".adk2x.com/"], :root a[href^="http://duckcash.eu/"], :root a[href^="http://www.mobileandinternetadvertising.com/"], :root .GB3L-QEDGY .GB3L-QEDF- > .GB3L-QEDE-, :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root a[href^="http://liversely.net/"], :root .ra[width="30%"][align="right"] + table[width="70%"][cellpadding="0"], :root iframe[id^="google_ads_frame"], :root a[href^="http://www.bluehost.com/track/"] > img, :root a[data-url^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://n.admagnet.net/"], :root a[href^="http://bestchickshere.com/"], :root a[href^="http://www.streamtunerhd.com/signup?"], :root #ssmiwdiv[jsdisplay], :root a[href^="//awejmp.com/"], :root a[href^="http://www.getyourguide.com/?partner_id="], :root [onclick^="window.open('https://www.brazzersnetwork.com/landing/"], :root a[href*="a2g-secure.com"], :root #resultspanel > #topads, :root a[href^="http://espn.zlbu.net/"], :root a[href^="http://k2s.cc/pr/"], :root [onclick^="window.open('window.open('//delivery.trafficfabrik.com/"], :root a[href^="http://adrunnr.com/"], :root [lazy-ad="leftthin_banner"], :root [id*="MarketGid"], :root a[href^="http://www.accuserveadsystem.com/accuserve-go.php?"], :root a[href^="http://c.ketads.com/"], :root a[href^="http://6kup12tgxx.com/"], :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root a[href^="http://hd-plugins.com/download/"], :root a[href^="//voyeurhit.com/cs/"], :root a[href^="http://www.afgr3.com/"], :root [ad-id^="googlead"], :root a[href^="https://topoffers.com/"][href*="/?pid="], :root a[href^="http://vinfdv6b4j.com/"], :root a[href^="http://bonusfapturbo.nmvsite.com/"], :root a[href^="//porngames.adult/?SID="], :root DFP-AD, :root a[href^="//www.mgid.com/"], :root #center_col > div[style="font-size:14px;margin-right:0;min-height:5px"] > div[style="font-size:14px;margin:0 4px;padding:1px 5px;background:#fff8e7"], :root a[href^="http://track.affiliatenetwork.co.za/"], :root a[data-redirect^="http://paid.outbrain.com/network/redir?"], :root .jobs-information-call-to-action + .jobs-information-call-to-action div[class$="_item"], :root a[href^="http://servicegetbook.net/"], :root #rhs_block > #mbEnd, :root a[href^="http://cinema.friendscout24.de?"], :root [lazy-ad="lefttop_banner"], :root .__y_inner > .__y_item, :root a[href^="https://secure.cbdpure.com/aff/"], :root AMP-AD, :root a[href^="http://adclick.g.doubleclick.net/"], :root #main-content > [style="padding:10px 0 0 0 !important;"], :root #center_col > #resultStats + div[style="border:1px solid #dedede;margin-bottom:11px;padding:5px 7px 5px 6px"], :root div[class^="lifeOnwerAd"], :root a[data-oburl^="http://paid.outbrain.com/network/redir?"], :root iframe[src^="http://cdn1.adexprt.com/"], :root a[href^="http://dwn.pushtraffic.net/"], :root a[href$="/vghd.shtml"], :root a[href^="https://redirect.ero-advertising.com/"], :root a[href^="http://easydownload4you.com/"], :root a[href^="http://ffxitrack.com/"], :root #center_col > #main > .dfrd > .mnr-c > .c._oc._zs, :root a[href^="http://b.bestcompleteusa.info/"], :root .trc_rbox_div .syndicatedItemUB, :root #mn div[style="position:relative"] > #center_col > div > ._dPg, :root a[href^="http://www.myvpn.pro/"], :root a[href^="//www.pd-news.com/"], :root a[href^="http://www.pinkvisualpad.com/?revid="], :root a[href*=".clksite.com/"], :root a[href^="http://www.webtrackerplus.com/"], :root .GJJKPX2N1 > .GJJKPX2M1 > .GJJKPX2P4, :root #center_col > #taw > #tvcap > .cu-container > .commercial-unit-desktop-top, :root a[href^="http://centertrust.xyz/"], :root a[href^="https://intrev.co/"], :root div[id^="google_ads_iframe_"], :root .vi-lb-placeholder[title="ADVERTISEMENT"], :root a[href^="http://goldmoney.com/?gmrefcode="], :root a[href^="http://papi.mynativeplatform.com:80/pub2/"], :root LEADERBOARD-AD, :root #mn #center_col > div > h2.spon:first-child + ol:last-child, :root a[href^="https://bongacams2.com/track?"], :root a[href^="//zenhppyad.com/"], :root .gbfwa > div[class$="_item"], :root a[href^="http://www.menaon.com/installs/"], :root a[href^="http://taboola-"][href*="/redirect.php?app.type="], :root .mw > #rcnt > #center_col > #taw > .c, :root a[href^="https://www.incredimail.com/?id"], :root a[href^="http://api.content.ad/"], :root a[href*=".clkcln.com/"], :root .commercial-unit-desktop-rhs > .iKidV > .Ee92ae + .P2mpm + .hp3sk, :root a[href^="http://prochina.space/"], :root a[href^="http://www.uniblue.com/cm/"], :root a[href^="http://landingpagegenius.com/"], :root a[data-redirect^="http://click.plista.com/pets"], :root #rhs_block > script + .c._oc._Ve.rhsvw, :root .__zinit .__y_item, :root .ch[onclick="ga(this,event)"], :root a[href^="http://track.incognitovpn.com/"], :root .__ywl .__y_item, :root a[href^="http://track.trkvluum.com/"], :root a[href*="/adrotate-out.php?"], :root a[href^="http://linksnappy.com/?ref="], :root [src^="/Redirect.a2b?"], :root a[href^="http://www.torntvdl.com/"], :root #center_col > #resultStats + #tads, :root .__yinit .__y_item, :root .ra[align="left"][width="30%"], :root a[href^="https://trackjs.com/?utm_source"], :root AFS-AD, :root #cnt #center_col > #res > #topstuff > .ts, :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="http://www.firstclass-download.com/"], :root a[href*=".trust.zone"], :root a[href*="googleme.eu"], :root .mod > ._jH + .rscontainer, :root .GFYY1SVD2 > .GFYY1SVC2 > .GFYY1SVF5, :root a[href^="https://dcs.adgear.com/clicks/"], :root a[href^="http://affiliates.score-affiliates.com/"], :root #rhswrapper > #rhssection[border="0"][bgcolor="#ffffff"], :root .Mpopup + #Mad > #MadZone, :root a[href^="https://www.adxtro.com/"], :root #center_col > #\5f Emc, :root div[id^="dfp-ad-"], :root a[href^="http://ads2.williamhill.com/redirect.aspx?"], :root a[href^="https://www.spyoff.com/"], :root AD-TRIPLE-BOX, :root a[href^="//z6naousb.com/"], :root .rc-cta[data-target], :root #rhs_block > .ts[cellspacing="0"][cellpadding="0"][style="padding:0"], :root #header + #content > #left > #rlblock_left, :root a[href^="http://www.seekbang.com/cs/"], :root a[href^="http://syndication.exoclick.com/"], :root a[href^="http://bluehost.com/track/"], :root a[href^="https://squren.com/rotator/?atomid="], :root .nrelate .nr_partner, :root #center_col > #resultStats + #tads + #res + #tads, :root a[href^="//medleyads.com/spot/"], :root a[href*="mfroute.com/"], :root #rhs_block > ol > .rhsvw > .kp-blk > .xpdopen > ._OKe > ol > ._DJe > .luhb-div, :root a[href^="http://tezfiles.com/pr/"], :root a[href^="http://t.wowtrk.com/"], :root #center_col > #taw > #tvcap > .rscontainer, :root #main_col > #center_col div[style="font-size:14px;margin:0 4px;padding:1px 5px;background:#fff7ed"], :root a[href^="http://webtrackerplus.com/"], :root a[href^="http://clickandjoinyourgirl.com/"], :root div[itemtype="http://schema.org/WPAdBlock"], :root a[href^="https://www.nudeidols.com/cams/"], :root #center_col > #res > #topstuff + #search > div > #ires > #rso > #flun, :root a[href^="http://www.sex.com/pics/?utm_"], :root a[href^="http://vo2.qrlsx.com/"], :root a[href^="http://engine.newsmaxfeednetwork.com/"], :root a[href^="http://ad.yieldmanager.com/"], :root a[href^="http://www.plus500.com/?id="], :root #flowplayer > div[style="z-index: 208; position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px;"], :root a[href^="http://ddownload39.club/"], :root a[href^="http://n217adserv.com/"], :root a[href^="//4c7og3qcob.com/"] { display: none !important; }</style><script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/cookie-modal.js.descargar"></script></head>
+       <!--
+      pub: GUID-89828F80-A355-47E0-BAF8-DF391FBB4B4B=2.1.9.1.1
+      tpc: GUID-142621B2-8F3A-42E2-850F-FD7630B3B9DF=11.1.1
+      -->
+     
+
+   <body class="es doc">
+      
+      
+    <div class="drawer">
+      <!-- Mobile Nav -->
+      <!-- Mobile Nav Drawer -->
+      <nav class="drawer-nav drawer-left"> <!-- drawer-right will put the drawer on the right side. -->
+        <div class="drawer-header">
+        <h4 class="site-title"><a href="http://desktop.arcgis.com/" id="site-logo">Arc<span>GIS</span> Desktop</a><span class="down-arrow" id="down-arrow"></span></h4>
+        </div>
+         
+                        <form id="helpSearchForm" class="site-search-form" method="GET" action="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm">
+                        <input class="drawer-search" type="search" name="q" data-langlabel="search-arcgis" placeholder="Buscar en ArcGIS for Desktop">
+                        <input type="hidden" name="collection" value="help">
+                        <input type="hidden" name="product" value="arcgis-desktop">
+                        <input type="hidden" name="version" value="10.3">
+                        <input type="hidden" name="language" value="es">
+                        </form>
+
+                    
+
+        <ul><li><a href="http://pro.arcgis.com/es/pro-app/" class="drawer-link">ArcGIS Pro</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/" class="drawer-link">ArcMap</a></li></ul>
+      </nav>
+
+
+      <nav class="drawer-nav drawer-right"> <!-- drawer-right will put the drawer on the right side. -->
+        <div class="drawer-header">
+          <h4 class="site-title user-name data-username" data-username=""></h4>
+        </div>
+
+        <ul><li><a href="http://pro.arcgis.com/es/pro-app/" class="drawer-link">ArcGIS Pro</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/" class="drawer-link">ArcMap</a></li></ul>
+      </nav>
+    </div>
+    
+      <div class="wrapper">
+         <div class="page sticky-footer">
+            <!--googleoff: all-->
+            
+    <header id="header" class="header">
+      <div class="container relative-container">
+        <div class="row">
+          <div class="column-24">
+            <div class="site-brand">
+              <a class="drawer-toggle toggle-site-navigation icon-navigation tablet-show" data-direction="active-left" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#"></a>
+              <a href="http://desktop.arcgis.com/" class="site-logo phone-hide" id="site-logo">Arc<span>GIS</span> Desktop</a>
+              <span class="site-dropdown-toggle tablet-hide" id="down-arrow"></span>
+
+              <nav class="site-dropdown tablet-hide" id="dropDown">
+                  <a href="http://www.arcgis.com/">
+                    <h4 data-langlabel="arcgis">ArcGIS Online</h4>
+                    <p>La plataforma de representación cartográfica para tu organización</p>
+                  </a>
+                  <a href="http://desktop.arcgis.com/" class="current selected">
+                    <h4 data-langlabel="arcgis-for-desktop">ArcGIS Desktop</h4>
+                    <p>Un completo SIG profesional</p>
+                  </a>
+                  <a href="http://enterprise.arcgis.com/">
+                    <h4 data-langlabel="arcgis-for-server">ArcGIS Enterprise</h4>
+                    <p>SIG en tu empresa</p>
+                  </a>
+                  <a href="https://developers.arcgis.com/">
+                    <h4 data-langlabel="arcgis-for-developers">ArcGIS for Developers</h4>
+                    <p>Herramientas para crear aplicaciones basadas en la ubicación</p>
+                  </a>
+                  <a href="http://solutions.arcgis.com/">
+                    <h4 data-langlabel="arcgis-solutions">ArcGIS Solutions</h4>
+                    <p>Plantillas de aplicaciones y mapas gratuitas para tu sector</p>
+                  </a>
+                  <a href="http://marketplace.arcgis.com/">
+                    <h4 data-langlabel="arcgis-marketplace">ArcGIS Marketplace</h4>
+                    <p>Obtén aplicaciones y datos para tu organización.</p>
+                  </a>
+              </nav>
+            </div> <!-- End of site brand -->
+
+            <nav class="site-nav tablet-hide">
+              <ul><li><a href="http://pro.arcgis.com/es/pro-app/">ArcGIS Pro</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/">ArcMap</a></li></ul>
+            </nav>
+            <a class="esri-logo" href="http://www.esri.com/">Esri</a>
+            <div id="lang-block" class="dropdown-navigation dropdown-wrapper right-align right tablet-hide"><a class="dropdown left" data-lang="en" id="lglink">English</a><div class="dropdown-content"><div id="lgpickerId" class="dropdown-menu"><ul><li><a class="lgchoice" data-lang="en" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#" style="font-weight: bolder;">English</a></li><li><a class="lgchoice" data-lang="de" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#">Deutsch</a></li><li><a class="lgchoice" data-lang="es" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#">Español</a></li><li><a class="lgchoice" data-lang="fr" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#">Français</a></li><li><a class="lgchoice" data-lang="ja" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#">日本語</a></li><li><a class="lgchoice" data-lang="ru" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#">Русский</a></li><li><a class="lgchoice" data-lang="zh-cn" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#">简体中文</a></li></ul></div></div></div>
+
+
+            
+        <nav id="logged-out-navigation" class="right hide-if-logged-in">
+          <ul class="left plain inline">
+          <li>
+            <a data-langlabel="sign-in" id="login-link" class="icon-user" href="http://www.arcgis.com/home/signin.html?returnUrl=http%3A%2F%2Fdesktop.arcgis.com%2Fes%2Farcmap%2F10.3%2Fmanage-data%2Ftables%2Fcalculate-field-examples.htm">Iniciar sesión</a>
+          </li>
+          </ul>
+        </nav>
+
+       <div id="logged-in-navigation" class="align-left right hide-if-logged-out hide">
+              <div class="dropdown-navigation dropdown-wrapper right-align right tablet-hide" id="user-dropdown">
+              <a class="dropdown left" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#">user</a>
+              <div class="dropdown-content">
+                <div class="dropdown-menu">
+                <ul class="myconsole">
+                    <li class="agolProfile"><a data-langlabel="my-profile" href="http://www.arcgis.com/home/user.html">Mi perfil</a></li>
+                    <li class="agolLogout"><a id="agolLogout" data-langlabel="sign-out" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#">Cerrar sesión</a></li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+
+              <!-- Mobile User Menu Button -->
+            <a class="mobile-user-dropdown drawer-toggle toggle-site-navigation tablet-show right" data-direction="active-right" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#">
+            <img width="34" height="34" data-user-avatar="34" class="profile-image">
+            </a>
+          </div>
+    
+
+           
+                       <div class="site-search right">
+                        <form id="helpSearchForm" class="site-search-form" method="GET" action="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm">
+                        <span class="site-search-toggle icon-search"></span>
+                        <input class="left site-search-input" type="search" name="q" data-langlabel="search-arcgis" placeholder="Buscar en ArcGIS for Desktop">
+                        <input type="hidden" name="collection" value="help">
+                        <input type="hidden" name="product" value="arcgis-desktop">
+                        <input type="hidden" name="version" value="10.3">
+                        <input type="hidden" name="language" value="es">
+                        <button type="submit" class="btn transparent site-search-button" data-langlabel="site-search-go">Ir</button>
+                        </form>
+                      </div>
+
+                    
+
+          </div> <!-- Column 24 -->
+        </div>
+       </div>
+    </header>
+    
+            <div class="navigation-bar ">
+               <div class="container">
+                  <header>
+                     <h1><a href="http://desktop.arcgis.com/es/arcmap/10.3">ArcMap</a></h1>
+                  </header>
+                  <nav class="navigation-bar-nav"><ul><li><a href="http://desktop.arcgis.com/es/desktop/latest/" target="_top" title="Vista general de ArcGIS for Desktop">Inicio</a></li><li><a href="http://desktop.arcgis.com/es/desktop/latest/get-started/" target="_top" title="Introducción a ArcGIS for Desktop">Introducción</a></li><li><a href="http://desktop.arcgis.com/es/desktop/latest/map/" target="_top" title="Representación cartográfica con ArcGIS for Desktop">Mapa</a></li><li><a href="http://desktop.arcgis.com/es/desktop/latest/analyze/" target="_top" title="Análisis en ArcGIS for Desktop">Analizar</a></li><li class="current"><a href="http://desktop.arcgis.com/es/desktop/latest/manage-data/" target="_top" title="Administración de datos en ArcGIS for Desktop">Administrar datos</a></li><li><a href="http://desktop.arcgis.com/es/desktop/latest/tools/" target="_top" title="Referencia de las herramientas de geoprocesamiento">Herramientas</a></li><li><a href="http://desktop.arcgis.com/es/desktop/latest/guide-books/" target="_top" title="Documentación adicional para ArcGIS for Desktop">Más...</a></li></ul></nav>
+               </div>
+            </div>
+            <!--BREADCRUMB-BEG--><div id="bigmac" class="sticky-breadcrumbs trailer-2 affix" data-spy="affix" data-offset-top="180"><div class="container"><div class="column-24"><ul class="small breadcrumbs"><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/main/manage-data/what-is-geodata.htm">Administrar datos</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/datatypes">Tipos de datos</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/index.html">Tablas</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/fundamentals-of-field-calculations.htm">Calcular valores de campo</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#">Ejemplos de Calcular campo</a></li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#" class="right icon-arrow-up back-to-top scroll-show visible">Arriba</a></ul></div></div></div><!--BREADCRUMB-END-->
+            <!--googleon: all-->
+
+            <div class="container">
+               <div class="row">
+                  <!--googleoff: all-->
+                  <aside class="reference-index column-6"><nav class="accordion">
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/what-are-tables-and-attribute-information.htm">¿Qué son las tablas y la información de atributos?</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/a-quick-tour-of-tables-and-attribute-information.htm">Un recorrido rápido por la información de atributos y tablas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/essential-table-and-attribute-information-vocabulary.htm">Vocabulario esencial de información de atributos y tablas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/tabular-data-sources.htm">Fuentes de datos tabulares</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/common-tables-and-attributes-tasks.htm">Tareas comunes de tablas y atributos</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/keyboard-shortcuts-for-working-with-tables.htm">Accesos directos de teclado para trabajar con tablas</a></li>
+<section class="accordion-section " data-collapsed="true"><header><h4 class="section-title">Diseñar una tabla</h4></header><ul style="display: none;">
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/design-an-overview-of-table-properties.htm">Información general de propiedades de tablas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/designing-tables-in-the-geodatabase.htm">Diseñar tablas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/special-elements-of-tables.htm">Elementos especiales de las tablas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/defining-tables.htm">Definir tablas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/design-defining-fields-in-tables.htm">Definir campos en tablas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/arcgis-field-data-types.htm">Tipos de datos de campo ArcGIS</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/design-data-types-in-the-dbms.htm">Tipos de datos en el DBMS</a></li>
+</ul></section>
+<section class="accordion-section " data-collapsed="true"><header><h4 class="section-title">Crear y editar tablas</h4></header><ul style="display: none;">
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/creating-tables.htm">Creación de tablas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/how-to-add-data-to-tables.htm">Información para agregar datos a tablas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/fundamentals-of-adding-and-deleting-fields.htm">Principios de agregar y eliminar campos</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/adding-fields.htm">Agregar campos</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/deleting-fields.htm">Eliminar campos</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/fundamentals-of-objectid-fields.htm">Principios básicos de los campos ObjectID</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/adding-an-ascii-or-text-file-table.htm">Agregar una tabla de archivo de texto o ASCII</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/creating-attribute-indexes.htm">Crear índices de atributo</a></li>
+<li class="sectionlink" data-collapsed="true"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/understanding-how-to-edit-values-in-a-table.htm">Editar valores en tablas</a></li>
+<li class="sectionlink" data-collapsed="true"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/fundamentals-of-date-fields.htm">Utilizar campos de fecha</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/exporting-tables.htm">Exportar tablas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/creating-spatial-data-from-tables.htm">Crear datos espaciales a partir de tablas</a></li>
+<li class="sectionlink" data-collapsed="true"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/understanding-how-to-use-microsoft-excel-files-in-arcgis.htm">Utilizar archivos de Microsoft Excel y Access</a></li>
+</ul></section>
+<section class="accordion-section " data-collapsed="true"><header><h4 class="section-title">Mostrar tablas</h4></header><ul style="display: none;">
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/about-previewing-tables-in-arccatalog.htm">Acerca de la previsualización de tablas en ArcCatalog</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/previewing-a-table-in-arccatalog.htm">Previsualizar una tabla en ArcCatalog</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/adding-and-viewing-tables-in-arcmap.htm">Agregar y ver tablas en ArcMap</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/adding-tables-to-arcmap.htm">Agregar tablas a ArcMap</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/viewing-tables-in-arcmap.htm">Ver tablas en ArcMap</a></li>
+<li class="sectionlink" data-collapsed="true"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/field-properties-aliases-and-table-display-options.htm">Utilizar propiedades de campo, alias y opciones de visualización de tabla</a></li>
+<li class="sectionlink" data-collapsed="true"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/understanding-how-to-find-and-view-records-in-tables.htm">Buscar y visualizar registros en una tabla</a></li>
+<li class="sectionlink" data-collapsed="true"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/about-sorting-records-in-tables.htm">Ordenar registros en una tabla</a></li>
+<li class="sectionlink" data-collapsed="true"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/selecting-records-in-tables.htm">Seleccionar registros de una tabla</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/refreshing-a-table.htm">Volver a cargar la caché de la tabla</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/summarizing-data-in-a-table.htm">Resumir los datos de una tabla</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/adding-a-table-to-a-layout.htm">Agregar una tabla a un diseño</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/viewing-statistics-for-a-table.htm">Ver las estadísticas de una tabla</a></li>
+</ul></section>
+<section class="accordion-section current active" data-collapsed="false"><header><h4 class="section-title">Calcular valores de campo</h4></header><ul style="display: block;">
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/fundamentals-of-field-calculations.htm">Principios de cálculos de campo</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/making-field-calculations-making-simple-field-calc.htm">Realizar cálculos de campo simples</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculating-area-length-and-other-geometric-properties.htm">Calcular el área, la longitud y otras propiedades geométricas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/changing-the-case-of-text-field-values.htm">Cambiar las mayúsculas y minúsculas de los valores de campo de texto</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/using-the-calculate-field-tool.htm">Utilizar la herramienta Calcular campo</a></li>
+<li class="topiclink current"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm">Ejemplos de Calcular campo</a></li>
+</ul></section>
+<section class="accordion-section " data-collapsed="true"><header><h4 class="section-title">Unir y relacionar tablas por atributos</h4></header><ul style="display: none;">
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/about-joining-and-relating-tables.htm">Acerca de unir y relacionar tablas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/essentials-of-joining-tables.htm">Puntos fundamentales sobre la unión de tablas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/joining-attributes-in-one-table-to-another.htm">Unir atributos de una tabla a otra</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/managing-joined-tables.htm">Administrar tablas unidas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/essentials-of-relating-tables.htm">Aspectos básicos de la relación de tablas</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/relating-the-attributes-in-one-table-to-another.htm">Relacionar los atributos de una tabla con otra</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/accessing-related-records.htm">Acceder a registros relacionados</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/managing-related-tables.htm">Administrar tablas relacionadas</a></li>
+</ul></section>
+<section class="accordion-section " data-collapsed="true"><header><h4 class="section-title">Unir tablas por consulta espacial</h4></header><ul style="display: none;">
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/about-joining-the-attributes-of-features-by-their-location.htm">Unir los atributos de entidades por su ubicación</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/spatial-joins-by-feature-type.htm">Uniones espaciales según el tipo de entidad</a></li>
+<li class="sectionlink" data-collapsed="true"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/finding-the-nearest-feature.htm">Unión espacial de atributos y entidades al</a></li>
+</ul></section>
+<section class="accordion-section " data-collapsed="true"><header><h4 class="section-title">Crear resultados a partir de las tablas</h4></header><ul style="display: none;">
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/understanding-how-to-print-a-table.htm">Información para imprimir una tabla</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/printing-a-table.htm">Imprimir una tabla</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/setting-advanced-printing-options-for-printing-a-table.htm">Establecer opciones avanzadas para imprimir una tabla de atributos</a></li>
+<li class="topiclink"><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/creating-a-graph-from-a-table.htm">Crear un gráfico a partir de una tabla</a></li>
+</ul></section>
+</nav></aside>
+
+                  <!--googleon: all-->
+                  <div class="column-17 pre-1">
+
+                    <!-- BEGPAGECONTENT -->
+                    <header class="trailer-1">
+                       <h1 class="trailer-1">Ejemplos de Calcular campo</h1><div class="trailer-1 processed" id="platforms"><div class="left product">ArcMap 10.3</div><div class="divider left"> | </div><div class="dropdown-navigation dropdown-wrapper left"><a class="dropdown" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#"> Otras versiones</a><div class="dropdown-content"><div class="dropdown-menu"><ul><li><a id="107" data-plat="10.7" class="click-dropdown-item available" href="http://desktop.arcgis.com/es/arcmap/latest/manage-data/tables/calculate-field-examples.htm">10.7</a></li></ul><ul><li><a id="106" data-plat="10.6" class="click-dropdown-item available" href="http://desktop.arcgis.com/es/arcmap/10.6/manage-data/tables/calculate-field-examples.htm">10.6</a></li></ul><ul><li><a id="105" data-plat="10.5" class="click-dropdown-item available" href="http://desktop.arcgis.com/es/arcmap/10.5/manage-data/tables/calculate-field-examples.htm">10.5</a></li></ul><ul><li><a id="104" data-plat="10.4" class="click-dropdown-item available" href="http://desktop.arcgis.com/es/arcmap/10.4/manage-data/tables/calculate-field-examples.htm">10.4</a></li></ul><ul><li><a id="103" data-plat="10.3" class="click-dropdown-item current available" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm">10.3</a></li></ul></div></div></div><div class="clear"></div></div>
+                    </header>
+                    <main class="content-area">
+                       
+                       <div class="semantic-toc"><ul><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#GUID-9E423208-C918-442C-8D68-03AFB6C28709"> Cálculos simples </a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_2C1A27476FD54D949723FA8DFC9306B2">Funciones de Python incorporada</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_DF13F7EE4AF345CAAA46C1CFA2F7BFE1">Utilizar bloques de código</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_81CD39A7B56F4BC5874E41C759F51C9F">Muestras de código: matemática</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_11EAB368A53B4D1C9618A58A1B09F9D0">Calcular campos utilizando la lógica con Python</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_89F6A916BFA840528C57210D6B09125D">Calcular campos utilizando la lógica con VBScript</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_C9E46547D3B246C1B89A36B0C84F7BA8">Ejemplos de código: geometría</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_F885F6AD331240ACB2DBDDA70151146D">Conversiones de unidades geométricas</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_AFC203DD316B4543A729B413C3322F3C">Ejemplos de código: fechas</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_121D1E3E27DC4C84B9C060C9CA26060F">Ejemplos de código: cadenas de caracteres</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_F3F8CD77A9F647ABBA678A76ADB86E15">Cálculos acumulativos y secuenciales</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_E240EA484E2A459582E56871DD0BB862">Valores aleatorios</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_DFE39ACAD4144118AF066C6F2856197F">Calcular valores nulos</a></li></ul></div>
+                       
+    <p id="GUID-34BAB8E4-C266-4657-A7DD-F67C9283BE3D">      La introducción de valores con el teclado no es el único modo con el que puede editar valores en una tabla. En algunos casos, puede realizar un cálculo matemático para establecer un valor de campo para un registro único o incluso para todos los registros. Puede realizar cálculos simples y avanzados en todos los registros o en registros seleccionados. Además, puede calcular área, longitud, perímetro y otras propiedades geográficas en campos de tablas de atributos. Las siguientes secciones incluyen ejemplos del uso de la calculadora de campo. Los cálculos se pueden realizar con Python o con VBScript.</p>    <p id="GUID-831E71E1-A4CE-4DEB-AD9E-7F59991DDAD4">Para ArcGIS, se recomienda el lenguaje de secuencia de comandos de Python. Utilice <a class="xref xref" esrisubtype="extrel" hrefpfx="/es/arcmap/10.3/analyze" href="http://desktop.arcgis.com/es/arcmap/10.3/analyze/python/what-is-python-.htm">Python</a> si desea acceder a la funcionalidad de geoprocesamiento, incluida la geometría de entidad. La adopción de Python como el lenguaje de secuencia de comandos para ArcGIS proporciona muchas oportunidades para realizar cálculos.</p>    <p id="GUID-828CB35A-7F55-4B95-80B8-7D982ED5D191">Utilice <b>VBScript</b> si tiene experiencia con VBA o VBScript y se siente cómodo con la sintaxis de secuencia de comandos. Los archivos <span class="usertext">.cal</span> guardados de versiones anteriores de ArcGIS pueden funcionar o pueden precisar modificaciones mínimas. Si tiene código VBA de versiones anteriores que utilizan ArcObjects, deberá modificar los cálculos.</p>    <aside class="note" id="GUID-15D534B3-6280-4308-8204-AF5907B5EC92"><h5 class="icon-notebook">Nota:</h5><div class="note-content">      <ul class="bulleted" id="UL_07FAAB4D38A14A44A01A63ACD8DEDC84">        <li id="LI_DD5AFE6959B64B7D926381CB5EC5A72B">Python aplica la sangría como parte de la sintaxis. Utilice dos o cuatro espacios para definir cada nivel lógico. Alinee el comienzo y el final de los bloques de declaración, y sea consistente. </li>        <li id="LI_6B5E59036A324E07A464528D6923F6A3">Los campos de expresión de cálculo de Python se encuentran entre signos de exclamación (!!).</li>        <li id="LI_7F71F8C2E319471098195CE235E476A1">Cuando nombre variables, tenga en cuenta que Python distingue entre mayúsculas y minúsculas, de manera que <span class="usertext">yield</span> no es lo mismo que <span class="usertext">Yield</span>.</li>        <li id="LI_90D89D06A7E84DA8A862013961803CB7">VBScript no le permite declarar de forma explícita ningún tipo de dato; todas las variables son implícitamente <span class="usertext">Variant</span>. Las declaraciones como <span class="usertext">Dim x as String</span> deben eliminarse o simplificarse a <span class="usertext">Dim x</span>.</li>        <li id="LI_5D0FA14900104BD79F76836FD504DDBE"> Después de introducir las declaraciones, puede hacer clic en <span class="uicontrol">Guardar</span> si desea escribirlas en un archivo. El botón <span class="uicontrol">Cargar</span> le solicitará que busque y seleccione un archivo de cálculo existente.</li>      </ul>    </div></aside>    <section class="section1 padded-anchor" id="GUID-9E423208-C918-442C-8D68-03AFB6C28709" purpose="section1"><h2> Cálculos simples </h2><section class="section2 padded-anchor" id="ESRI_SECTION2_1B2C25F8E43043F39573E3F56AF30645" purpose="section2"><h3>Ejemplos de cadenas sencillas</h3><p id="GUID-2E6F4D1B-C5A1-4EA7-AC8E-F2CCCAC9A167">Varias funciones de cadenas de Python, incluidas <span class="usertext">capitalize</span>, <span class="usertext">rstrip</span> y <span class="usertext">replace</span>, admiten cadenas.</p><div class="codeblock">          <p class="codeblock-desc">Poner en mayúscula el primer carácter de la cadena del campo <span class="usertext">CITY_NAME</span>.</p>          <div class="highlight"><pre><code>!CITY_NAME!.capitalize()
+</code></pre></div>
+
+        </div><div class="codeblock">          <p class="codeblock-desc">Eliminar los espacios en blanco al final de la cadena del campo <span class="usertext">CITY_NAME</span>.</p>          <div class="highlight"><pre><code>!CITY_NAME!.rstrip()
+</code></pre></div>
+
+        </div><div class="codeblock">          <p class="codeblock-desc">Reemplazar las instancias de "california" con "California" que se encuentran en el campo <span class="usertext">STATE_NAME</span>.</p>          <div class="highlight"><pre><code>!STATE_NAME!.replace("california", "California")
+</code></pre></div>
+
+        </div><p id="GUID-8ADF1A64-53F3-45D7-8A6A-FF1CE8217879"> Los caracteres en un campo de cadena se pueden acceder mediante la indexación y la segmentación en Python. La indexación recupera los caracteres en una posición del índice; la segmentación recupera un grupo de caracteres.</p><h4 class="table title"></h4><table><colgroup width="*"></colgroup><colgroup width="1.75*"></colgroup><colgroup width="1.50*"></colgroup><thead><tr><th colspan="1">Ejemplo</th><th colspan="1">Explicación</th><th colspan="1">Resultado</th></tr></thead><tbody class="align-middle">              <tr class="align-middle">                <td rowspan="1" colspan="1">                  <p id="GUID-C82F550E-2335-4D45-BEBE-D34BE6928A7C">!fieldname![0]</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-4C63CC96-FEEE-448F-8E2A-C0F2D2088347">El primer carácter.</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-FFE0FA3B-1ED2-4215-94AF-80BC6B0E8BC1">"a"</p>                </td>              </tr>              <tr class="align-middle">                <td rowspan="1" colspan="1">                  <p id="GUID-375A09D8-A5FE-423B-A36A-CF42D08706EA">!fieldname![-2]</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-0EDF9F38-F34E-4113-981F-BBAC87067DF1">Del segundo al último carácter.</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-122357B3-B398-45A2-973E-88C39917A439">"e"</p>                </td>              </tr>              <tr class="align-middle">                <td rowspan="1" colspan="1">                  <p id="GUID-50074878-533B-4428-852B-C335675DE36F">!fieldname![1:4]</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-35ABF472-21BA-4A9B-8A08-095A659A9234">El segundo, tercero y cuarto carácter.</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-7E6EE162-A6BF-4C8E-9717-F7D477034E93">"bcd"</p>                </td>              </tr>            </tbody></table><p id="GUID-2E4CB148-5728-45DD-A5B2-889AD7F4FFB1">Python también admite el formato de cadena con el método <span class="usertext">str.format()</span>.</p><div class="codeblock">          <p class="codeblock-desc">Combinar FieldA y FieldB separados por dos puntos.</p>          <div class="highlight"><pre><code>"{}:{}".format(!FieldA!, !FieldB!)
+</code></pre></div>
+
+        </div><ul class="seealso bulleted"><li><a target="_blank" class="xref xref" href="http://docs.python.org/LIBRARY/STRING.HTML">Operaciones de cadenas de Python comunes</a></li></ul><section class="section3 padded-anchor" id="ESRI_SECTION3_9C36792EEF784EE9A0AF5D06DFD79EEB" purpose="section3"><h4>Funciones de cadenas de VBScript</h4><p id="GUID-50D96546-1F8B-46C6-91E4-FE9A1C911D4D">Varias funciones de cadenas de VBScript, incluidas <span class="usertext">Left</span>, <span class="usertext">InStr</span> y <span class="usertext">Chr</span>, admiten cadenas. A continuación hay algunos ejemplos de VBScript para funciones de cadenas comúnmente utilizadas en la Calculadora de campo.
+</p><div class="codeblock">            <p class="codeblock-desc">Función Left: devuelve un valor Variant (String) que contiene un número especificado de caracteres desde el lado izquierdo de una cadena.</p>            <div class="highlight"><pre><code>MyStr = Left([MyField], 1)
+</code></pre></div>
+
+          </div><div class="codeblock">            <p class="codeblock-desc">Función Right: devuelve un valor Variant (String) que contiene un número especificado de caracteres desde el lado derecho de una cadena.</p>            <div class="highlight"><pre><code>MyStr = Right([MyField], 1)
+</code></pre></div>
+
+          </div><div class="codeblock">            <p class="codeblock-desc">Función Mid: devuelve un valor Variant (String) que contiene un número especificado de caracteres de una cadena.</p>            <div class="highlight"><pre><code>MyString = "Mid Function Demo" 'Create text string
+FirstWord = Mid(MyString, 1, 3) ' Returns "Mid" 
+LastWord = Mid(MyString, 14, 4) 'Returns "Demo"
+MidWords = Mid(MyString, 5) 'Returns "Function Demo"
+</code></pre></div>
+
+          </div><div class="codeblock">            <p class="codeblock-desc">Función InStr: devuelve un valor Variant (Long) que especifica la posición de la primera instancia de una cadena dentro de otra.</p>            <div class="highlight"><pre><code>MyPosition = InStr([address], " ")
+</code></pre></div>
+
+          </div><div class="codeblock">            <p class="codeblock-desc">Función Replace: devuelve una cadena en la que una subcadena especificada ha sido reemplazada por otra subcadena un número de veces especificado.</p>            <div class="highlight"><pre><code>NewString = Replace([comments], "#", "!")
+</code></pre></div>
+
+          </div><div class="codeblock">            <p class="codeblock-desc">Función Chr: devuelve una cadena que contiene el carácter asociado al código de carácter especificado.</p>            <div class="highlight"><pre><code>' Replace a carriage return character with an exclamation 
+NewString = Replace([comments], chr(13), "!")
+</code></pre></div>
+
+          </div><div class="codeblock">            <p class="codeblock-desc">Operador &amp;: se utiliza para forzar la concatenación de cadenas de dos expresiones.</p>            <div class="highlight"><pre><code>MyStr = [MyField1] &amp; " " &amp; [MyField2]
+</code></pre></div>
+
+          </div></section></section><section class="section2 padded-anchor" id="ESRI_SECTION2_2470A38A154248EF88B5E8EB371B8B44" purpose="section2"><h3>Ejemplos de matemática sencillos</h3><p id="GUID-07DCD8A3-E75C-4A2F-AE02-CBCE17170BC1">Python proporciona herramientas para procesar números. Python también admite una serie de funciones numéricas y matemáticas, incluidas math, cmath, decimal, random, itertools, functools y operator.</p><h4 class="table title"></h4><table><colgroup width="*"></colgroup><colgroup width="*"></colgroup><colgroup width="1.50*"></colgroup><colgroup width="1.50*"></colgroup><thead><tr><th colspan="1">Operador</th><th colspan="1">Explicación</th><th colspan="1">Ejemplo</th><th colspan="1">Resultado</th></tr></thead><tbody class="align-middle">              <tr class="align-middle">                <td rowspan="1" colspan="1">                  <p id="GUID-153F32ED-81BA-4019-A7E5-8E9454BC8A5C">x + y</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-51204521-6A7C-40B0-9E76-413A07F7F4B9">x más y</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-58905DD2-34C8-4B0E-A00C-DE63BB8C8AEC">1.5 + 2.5</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-D63F67CC-62B8-491C-8ACC-A92941466DB6">4.0</p>                </td>              </tr>              <tr class="align-middle">                <td rowspan="1" colspan="1">                  <p id="GUID-3B34675B-A173-4579-8357-4CD33A8AF706">x - y</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-8079F99A-5A17-4810-A2B1-DB302AB64F10">x menos y</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-AABD9484-FB29-47E7-866B-BF008B1FF7C2">3.3 - 2.2</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-4EDCE9F7-0652-4FFB-AD7D-8DA532AD6C67">1.1</p>                </td>              </tr>              <tr class="align-middle">                <td rowspan="1" colspan="1">                  <p id="GUID-D1CC5853-49CF-45DB-A267-C9CEC2969A80">x * y</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-04CE452E-F4BB-42A4-B8AE-1553C8D7FDEA">x multiplicado por y</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-3FAF3822-D8A5-4BF9-8C99-21A22887EFE5">2.0 * 2.2</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-B05F3CC6-59E4-42CE-84B8-F45F004C30EB">4.4</p>                </td>              </tr>              <tr class="align-middle">                <td rowspan="1" colspan="1">                  <p id="GUID-3ECB4CDF-A4BB-4493-806E-CD66C0CC3F04">x / y</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-69993BD5-A77E-4918-B7EF-017F6C93AE1A">x dividido por y</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-A15BB146-4348-421B-BD16-E0A896B9C354">4.0 / 1.25</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-1EB7D798-4E6B-452A-83BF-00054BD8374B">3.2</p>                </td>              </tr>              <tr class="align-middle">                <td rowspan="1" colspan="1">                  <p id="GUID-9CEAE790-35FC-43CE-9616-D6538C505257">x // y</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-7F739881-F64E-4814-B765-EC4B5161F842">x dividido por y (<i>división truncada</i>)</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-5B72F301-B9F3-4C1C-9D9B-61E413581E5C">4.0 / 1.25</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-575C03B1-55C9-4B4D-8EAA-6403D716374A">3.0</p>                </td>              </tr>              <tr class="align-middle">                <td rowspan="1" colspan="1">                  <p id="GUID-3412B532-8592-4A30-A4A4-ADDF3C13AC67">x % y</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-802126E6-0CD3-42F0-92C1-D11E91B6BC3D">x módulo y</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-4E7D56A4-7329-4A11-9E69-4F54CE3C4DF9">8 % 3</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-8F250D76-D158-41D9-B628-CF34052F8C41">2</p>                </td>              </tr>              <tr class="align-middle">                <td rowspan="1" colspan="1">                  <p id="GUID-845E419B-729A-44B9-8794-9C700C367D46">-x</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-7191D915-4DC0-4002-AD99-A5B06C55769E">expresión negativa de x</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-9BCD6EC2-6593-4AF9-9B62-36C877A90ECB">x = 5</p>                  <p id="GUID-39616375-B4DD-4EE7-82E8-490410803604">-x</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-6F90EA09-25FE-4740-88C6-F538AD592787">-5</p>                </td>              </tr>              <tr class="align-middle">                <td rowspan="1" colspan="1">                  <p id="GUID-59284690-5F4C-4F70-926D-8A314794453D">+x</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-9F7564DC-975A-4035-B056-26F510D20C6A">x no cambia</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-73ED2C64-CEBD-401F-B03B-4F957A3DA942">x = 5</p>                  <p id="GUID-88EF26A4-AD05-47C0-AB0E-738CE22C1A11">+x</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-D3BE7D6A-04B2-4300-96ED-8205D7F5D3BC">5</p>                </td>              </tr>              <tr class="align-middle">                <td rowspan="1" colspan="1">                  <p id="GUID-898868BF-F892-4E53-87A8-55CBF966D41F">x ** y</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-F43F0A95-94DD-41A0-8F9B-8CA690AD037A">x elevado a la potencia de y</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-217A69B0-E6E0-4DE1-9705-CD6311DED540">2 ** 3</p>                </td>                <td rowspan="1" colspan="1">                  <p id="GUID-F2600AEE-E65E-4CB3-A37E-5A09D34FDED0">8</p>                </td>              </tr>            </tbody></table><div class="codeblock">          <p class="codeblock-desc">Multiplicación</p>          <div class="highlight"><pre><code>!Rank! * 2
+</code></pre></div>
+
+        </div><div class="codeblock">          <p class="codeblock-desc">Calcule el volumen de una esfera dado un campo de radio.</p>          <div class="highlight"><pre><code>4 / 3 * math.pi * !Radius! ** 3
+</code></pre></div>
+
+        </div><p id="GUID-6DCC95B9-1A70-476D-894A-F9B60D616990">          Cuando realiza cálculos de campo con una expresión Python, las reglas matemáticas de Python están en vigor. Por ejemplo, dividir dos valores enteros siempre producirá un resultado entero (3 / 2 = 1). Obtención de resultados decimales</p><ul class="bulleted" id="UL_7FD65F9021184159845B7ED83BE1D996">          <li id="LI_0D0E4787F7AA414780517DEC837A990C"> Uno de los números de la operación debe ser un valor decimal: 3,0/2 = 1,5.</li>          <li id="LI_BCF8D6AACC5443E28591154EF23943DA">Utilice la función <span class="usertext">float</span> para convertir de forma explícita el valor a un flotante:<div class="codeblock"><div class="highlight"><pre><code>float(3)/2 = 1.5
+</code></pre></div>
+</div><div class="codeblock"><p class="codeblock-desc"></p><div class="highlight"><pre><code>float(!Population!) / !Area!
+</code></pre></div>
+</div><ul class="seealso bulleted"><li><a target="_blank" class="xref xref" href="http://docs.python.org/LIBRARY/STRING.HTML"> Utilizar Python como una calculadora</a></li></ul></li>        </ul></section></section>    <section class="section1 padded-anchor" id="ESRI_SECTION1_2C1A27476FD54D949723FA8DFC9306B2" purpose="section1"><h2>Funciones de Python incorporada</h2><p id="GUID-711BF9FB-A3A2-4052-A0BD-5D1AADF10EFE">Python tiene varias funciones incorporadas disponibles para su uso, incluidas <span class="usertext">max</span>, <span class="usertext">min</span>, <span class="usertext">round</span> y <span class="usertext">sum</span>.</p><ul class="seealso bulleted"><li><a target="_blank" class="xref xref" href="http://docs.python.org/TUTORIAL/INTRODUCTION.HTML#USING-PYTHON-AS-A-CALCULATOR">Funciones de Python incorporada</a></li></ul><div class="codeblock">        <p class="codeblock-desc">Calcular el valor máximo para cada registro a partir de la lista de campos.</p>        <div class="highlight"><pre><code>max([!field1!, !field2!, !field3!])
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Calcular la suma para cada registro a partir de la lista de campos.</p>        <div class="highlight"><pre><code>sum([!field1!, !field2!, !field3!])
+</code></pre></div>
+
+      </div></section>    <section class="section1 padded-anchor" id="ESRI_SECTION1_DF13F7EE4AF345CAAA46C1CFA2F7BFE1" purpose="section1"><h2>Utilizar bloques de código</h2><p id="GUID-6BAFA2E5-F771-42A4-8698-97ECEAAFC909">Con las expresiones de Python y el parámetro Bloque de código, puede:</p><ul class="bulleted" id="UL_5FAB7C36754E479586467CF9D83FC822">        <li id="LI_8936EEB946BC4BFA8F43C481A4039C83">Utilizar cualquier función de Python en la expresión.</li>        <li id="LI_F21088CC2DA04797B891B329F6A91ACD">Acceder a los objetos y las funciones de geoprocesamiento.</li>        <li id="LI_7CB86A7D6A58441F81EEE0D9A116843B">Acceder a las propiedades de geometría de entidad.</li>        <li id="LI_D196724A7567467F95FB202DF05A67AE">Acceder al nuevo operador de valor aleatorio.</li>        <li id="LI_71B94CFC0BA14F7EA3A8FD63B9C711EA">Reclasificar valores con la lógica if-then-else.</li>        <li id="LI_821B458C82254D9EA61C6D5053437F3C">Utilizar otras herramientas de geoprocesamiento.</li>      </ul><p ishcondition="publication=tbl_attr" id="GUID-1D741E69-F1B5-4745-8CCA-648A0C3618D0">El analizador utilizado determina la forma en que se utiliza el bloque de código. La Calculadora de campo es compatible con los analizadores de Python y VB Script.</p><h4 class="table title"></h4><table><colgroup width="*"></colgroup><colgroup width="*"></colgroup><thead><tr><th colspan="1">Analizador</th><th colspan="1">Bloque de código</th></tr></thead><tbody class="align-middle">            <tr class="align-middle">              <td rowspan="1" colspan="1">                <p id="GUID-3A27C3D0-B6BE-4010-8446-FE5ABB0B34A4">Python</p>              </td>              <td rowspan="1" colspan="1">                <p id="GUID-5950BE2E-EBD4-4369-8841-153058DB2691">Es compatible con la funcionalidad de Python. El bloque de código se expresa utilizando funciones de Python (<span class="usertext">def</span>). Las propiedades de geometría se expresan utilizando objetos de geoprocesamiento, como objetos de punto, donde sea apropiado.</p>              </td>            </tr>            <tr class="align-middle">              <td rowspan="1" colspan="1">                <p id="GUID-8ED74005-FEEC-4841-B99C-D9A033153A18">VB Script</p>              </td>              <td rowspan="1" colspan="1">                <p id="GUID-2B192DFA-1BBE-4713-980B-D95086D6BD7B">Los cálculos se realizan utilizando VBScript.</p>              </td>            </tr>          </tbody></table><p id="GUID-22FE27B8-22EF-4885-B52A-89A60DC5A021">Las funciones de Python se definen con la palabra clave <span class="usertext">def</span> seguida del nombre de la función y los argumentos de entrada de la función. Una función de Python se puede escribir para aceptar cualquier cantidad de argumentos de entrada (inclusive ninguno). La función devuelve los valores mediante una declaración <span class="uicontrol">return</span>. El nombre de la función es elección suya (no utilice espacios ni números a la izquierda).</p><img src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/GUID-36482072-8C7F-4AB0-9882-6BB6E7226B59-web.png" alt="Utilizar la calculadora de campo" title="Utilizar la calculadora de campo"><aside class="note" id="GUID-B1BF9E85-A555-4FB2-BDDB-C9A4DC43B110"><h5 class="icon-notebook">Nota:</h5><div class="note-content">        <p id="GUID-90CFF93D-ADFB-4DC2-9510-D1702F50CD51">Recuerde que Python aplica la sangría como parte de la sintaxis. Utilice dos o cuatro espacios para definir cada nivel lógico. Alinee el comienzo y el final de los bloques de declaración, y sea consistente. </p>      </div></aside></section>    <section class="section1 padded-anchor" id="ESRI_SECTION1_81CD39A7B56F4BC5874E41C759F51C9F" purpose="section1"><h2>Muestras de código: matemática</h2><div class="codeblock">        <p class="codeblock-desc">Redondear el valor del campo a dos posiciones decimales.</p>        <div class="highlight"><pre><code>Expresión:
+round(!area!, 2)
+
+Analizador:
+Python
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Utilizar el módulo de matemática para convertir metros a pies. La conversión se eleva a la potencia de 2 y se multiplica por el área.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+MetersToFeet((float(!shape.area!)))
+
+Código bloque:
+def MetersToFeet(area):
+    return math.pow(3.2808, 2) * area
+</code></pre></div>
+
+      </div></section>    <section class="section1 padded-anchor" id="ESRI_SECTION1_11EAB368A53B4D1C9618A58A1B09F9D0" purpose="section1"><h2>Calcular campos utilizando la lógica con Python</h2><div class="codeblock">        <p class="codeblock-desc">Clasificar basado en los valores de campo.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+Reclass(!WELL_YIELD!)
+
+Código bloque:
+def Reclass(WellYield):
+    if (WellYield &gt;= 0 and WellYield &lt;= 10):
+        return 1
+    elif (WellYield &gt; 10 and WellYield &lt;= 20):
+        return 2
+    elif (WellYield &gt; 20 and WellYield &lt;= 30):
+        return 3
+    elif (WellYield &gt; 30):
+        return 4
+</code></pre></div>
+
+      </div></section>    <section class="section1 padded-anchor" id="ESRI_SECTION1_89F6A916BFA840528C57210D6B09125D" purpose="section1"><h2>Calcular campos utilizando la lógica con VBScript</h2><div class="codeblock">        <p class="codeblock-desc">Ejecuta condicionalmente un grupo de declaraciones, dependiendo del valor de una expresión.</p>        <div class="highlight"><pre><code>Analizador:
+VB Script
+
+Expresión:
+density
+
+Código bloque:
+Dim density
+If [POP90_SQMI] &lt; 100 Then
+density = "low"
+
+elseif [POP90_SQMI] &lt; 300 Then
+density = "medium"
+
+else
+density = "high"
+end if
+</code></pre></div>
+
+      </div></section>    <section class="section1 padded-anchor" id="ESRI_SECTION1_C9E46547D3B246C1B89A36B0C84F7BA8" purpose="section1"><h2>Ejemplos de código: geometría</h2><aside class="note" id="GUID-4A8CAFF6-7614-40BC-BD32-B6A3582487C2"><h5 class="icon-notebook">Nota:</h5><div class="note-content">        <p id="GUID-97A08045-C97C-4441-9D9E-CEF909D07105">Para obtener más información sobre la conversión de unidades geométricas, consulte la sección "Conversiones de unidades geométricas" a continuación. </p>      </div></aside><div class="codeblock">        <p class="codeblock-desc">Calcular el área de una entidad.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+!shape.area!
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Calcular la coordenada X máxima de una entidad.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+!shape.extent.XMax!
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Calcular el número de vértices de una entidad.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+MySub(!shape!)
+
+Código bloque:
+def MySub(feat):    
+    partnum = 0
+
+    # Count the number of points in the current multipart feature
+    partcount = feat.partCount
+    pntcount = 0
+
+    # Enter while loop for each part in the feature (if a singlepart 
+    # feature this will occur only once)
+    #
+    while partnum &lt; partcount:
+        part = feat.getPart(partnum)
+        pnt = part.next()
+
+        # Enter while loop for each vertex
+        #
+        while pnt:
+            pntcount += 1   
+            pnt = part.next()
+   
+            # If pnt is null, either the part is finished or there 
+            # is an interior ring
+            #
+            if not pnt: 
+                pnt = part.next()
+        partnum += 1
+    return pntcount
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Para una clase de entidad de puntos, cambiar la coordenada x de cada punto por 100.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+shiftXCoordinate(!SHAPE!)
+
+Código bloque:
+def shiftXCoordinate(shape):
+    shiftValue = 100
+    point = shape.getPart(0)
+    point.X += shiftValue
+    return point
+</code></pre></div>
+
+      </div></section>    <section class="section1 padded-anchor" id="ESRI_SECTION1_F885F6AD331240ACB2DBDDA70151146D" purpose="section1"><h2>Conversiones de unidades geométricas</h2><p id="GUID-A3EF12F4-B345-40B5-BA3D-9E05FB37EAD9">Las propiedades de área y longitud del campo de geometría se pueden modificar con tipos de unidades expresados con un signo <span class="usertext">@</span>.</p><ul class="bulleted" id="UL_B22D09AB6C6D4BA485384A4DBA860571"><li id="LI_8B2722B7E6744FF6BEC3643A86FAC246">Palabras clave de unidad de medida de área: <ul class="bulleted" id="UL_B13DF3CDA2FF43E5A88CCDE1CAEE5CFF"><li id="LI_CEF367DE987E4C678DB18EE04D56A0CA">ACRES | ARES | HECTARES | SQUARECENTIMETERS | SQUAREDECIMETERS | SQUAREINCHES | SQUAREFEET | SQUAREKILOMETERS | SQUAREMETERS | SQUAREMILES | SQUAREMILLIMETERS | SQUAREYARDS | SQUAREMAPUNITS | UNKNOWN</li></ul></li><li id="LI_F961809AFCCD4F89B7EF596D326E8E10">Palabras clave de unidad de medida lineal: <ul class="bulleted" id="UL_4786EAC51B4849AABC599AAE647E6AA2"><li id="LI_913500375E834ECB95DADA4C31F36082">CENTIMETERS | DECIMALDEGREES | DECIMETERS | FEET | INCHES | KILOMETERS | METERS | MILES | MILLIMETERS | NAUTICALMILES | POINTS | UNKNOWN | YARDS</li></ul></li></ul><aside class="note" id="GUID-67A54C81-4019-48E9-A7DB-DF4F15312692"><h5 class="icon-notebook">Nota:</h5><div class="note-content">        <p id="GUID-7B13ADD5-2022-48EA-BAAF-81D71AC62D46">Si los datos se almacenan en un sistema de coordenadas geográficas y se proporciona una unidad lineal (por ejemplo, pies), el cálculo de longitud se convertirá mediante un algoritmo geodésico.</p>      </div></aside><aside class="note" id="GUID-6385BCD4-CBD5-42F7-8BCE-17576F0C5FAF"><h5 class="icon-caution-cone">Precaución:</h5><div class="note-content">        <p id="GUID-BFFE591D-3F6F-4A8B-816F-F1511A53028D"> Convertir las unidades de área en datos en un sistema de coordenadas geográficas producirá resultados cuestionables ya que los grados decimales no son consistentes en el globo.</p>      </div></aside><div class="codeblock">        <p class="codeblock-desc">Calcular la longitud de una entidad en yardas.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+!shape.length@yards!
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Calcular el área de una entidad en acres.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+!shape.area@acres!
+</code></pre></div>
+
+      </div><p id="GUID-494C047D-537B-4637-BE2A-E5615D985754">La longitud y área geodésicas también se pueden calcular utilizando las propiedades <span class="usertext">geodesicArea</span> y <span class="usertext">geodesicLength</span> con el signo <span class="usertext">@</span> seguidas de una palabra clave de unidad de medida.</p><div class="codeblock">        <p class="codeblock-desc">Calcule la longitud geodésica de una entidad en yardas.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+!shape.geodesicLength@yards!
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Calcule el área geodésica de una entidad en acres.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+!shape.geodesicArea@acres!
+</code></pre></div>
+
+      </div></section>    <section class="section1 padded-anchor" id="ESRI_SECTION1_AFC203DD316B4543A729B413C3322F3C" purpose="section1"><h2>Ejemplos de código: fechas</h2><div class="codeblock">        <p class="codeblock-desc">Calcular la fecha actual.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+time.strftime("%d/%m/%Y")
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Calcular la fecha y hora actuales.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+datetime.datetime.now()
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Calcular la fecha para que sea el 31 de diciembre de 2000.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+datetime.datetime(2000, 12, 31)
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Calcular el número de días entre la fecha actual y el valor en un campo.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+(datetime.datetime.now() - arcpy.time.ParseDateTimeString(!field1!)).days
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Calcular una fecha agregando 100 días al valor de fecha en un campo.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+arcpy.time.ParseDateTimeString(!field1!) + datetime.timedelta(days=100)
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Calcular el día de la semana (por ejemplo, domingo) para un valor de fecha en un campo.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+arcpy.time.ParseDateTimeString(!field1!).strftime('%A')
+</code></pre></div>
+
+      </div></section>    <section class="section1 padded-anchor" id="ESRI_SECTION1_121D1E3E27DC4C84B9C060C9CA26060F" purpose="section1"><h2>Ejemplos de código: cadenas de caracteres</h2><div class="codeblock">        <p class="codeblock-desc">Devolver los tres caracteres más a la derecha.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+!SUB_REGION![-3:]
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Remplazar todas las instancias de una "P" mayúscula con una "p" minúscula.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+!STATE_NAME!.replace("P","p")
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Concatenar dos campos con un separador de espacio</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+!SUB_REGION! + " " + !STATE_ABBR!
+</code></pre></div>
+
+      </div><section class="section2 padded-anchor" id="ESRI_SECTION2_3FE320D5B3594146A0CC7A3B9F54FB25" purpose="section2"><h3>Convertir a la primera letra de cada palabra en mayúscula y las demás en minúscula</h3><p id="GUID-4CFF2ADA-75C5-493B-8C95-E964D4CD6762">Los siguientes ejemplos muestran diferentes maneras de convertir palabras de modo que cada palabra tenga la primer letra en mayúscula y el resto de las letras en minúscula.</p><div class="codeblock">          <p class="codeblock-desc"></p>          <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+' '.join([i.capitalize() for i in !STATE_NAME!.split(' ')])
+</code></pre></div>
+
+        </div><div class="codeblock">          <p class="codeblock-desc"></p>          <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+!STATE_NAME!.title()
+</code></pre></div>
+
+        </div></section><section class="section2 padded-anchor" id="ESRI_SECTION2_B11BF83BB1DA463FBBB9DAE975299EB6" purpose="section2"><h3>Expresiones regulares</h3><p id="GUID-B9BF944D-D43E-4531-BE7F-93D3CE160B51">El módulo <span class="usertext">re</span> de Python proporciona operaciones de concordancia de expresión regular que se pueden utilizar para elaborar las reglas de geocodificación y sustitución de patrones complejos de cadenas de caracteres.</p><ul class="seealso bulleted"><li><a target="_blank" class="xref xref" href="http://docs.python.org/LIBRARY/RE.HTML">re – Operaciones de expresión regular</a></li><li><a target="_blank" class="xref xref" href="http://docs.python.org/HOWTO/REGEX.HTML">Expresión regular de cómo</a></li></ul><div class="codeblock">          <p class="codeblock-desc">Reemplazar 'St' o 'St.' al iniciar nuevas palabras al final de la cadena de caracteres con la palabra 'Street'.</p>          <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+update_street(!ADDRESS!)
+
+Código bloque:
+import re
+def update_street(street_name):
+    return re.sub(r"""\b(St|St.)\Z""",  
+                  'Street',
+                  street_name)
+</code></pre></div>
+
+        </div></section></section>    <section class="section1 padded-anchor" id="ESRI_SECTION1_F3F8CD77A9F647ABBA678A76ADB86E15" purpose="section1"><h2>Cálculos acumulativos y secuenciales</h2><div class="codeblock">        <p class="codeblock-desc">Calcular un número o Id. secuencial basado en un intervalo.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+autoIncrement()
+
+Código bloque:
+rec=0
+def autoIncrement():
+    global rec
+    pStart = 1 #adjust start value, if req'd 
+    pInterval = 1 #adjust interval value, if req'd
+    if (rec == 0): 
+        rec = pStart 
+    else: 
+        rec = rec + pInterval 
+    return rec
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Calcular el valor acumulativo de un campo numérico.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+accumulate(!FieldA!)
+
+Código bloque:
+total = 0
+def accumulate(increment):
+    global total
+    if total:
+        total += increment
+    else:
+        total = increment
+    return total
+</code></pre></div>
+
+      </div><div class="codeblock">        <p class="codeblock-desc">Calcular el aumento del porcentaje de un campo numérico.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+percentIncrease(float(!FieldA!))
+
+Código bloque:
+lastValue = 0
+def percentIncrease(newValue):
+    global lastValue
+    if lastValue:
+        percentage = ((newValue - lastValue) / lastValue)  * 100
+    else: 
+        percentage = 0
+    lastValue = newValue
+    return percentage
+</code></pre></div>
+
+      </div></section>    <section class="section1 padded-anchor" id="ESRI_SECTION1_E240EA484E2A459582E56871DD0BB862" purpose="section1"><h2>Valores aleatorios</h2><div class="codeblock">        <p class="codeblock-desc">Utilizar el paquete del sitio de numpy para calcular valores flotantes aleatorios entre 0,0 y 1,0.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+getRandomValue()
+
+Código bloque:
+import numpy
+
+def getRandomValue():
+    return numpy.random.random()
+</code></pre></div>
+
+      </div></section>    <section class="section1 padded-anchor" id="ESRI_SECTION1_DFE39ACAD4144118AF066C6F2856197F" purpose="section1"><h2>Calcular valores nulos</h2><p id="GUID-FD7F7F96-F372-4E82-994D-EC09A356CA94">Con una expresión de Python, se pueden calcular los valores nulos utilizando un valor <span class="usertext">None</span> de Python.</p><aside class="note" id="GUID-DCFE404C-70EC-4D28-ADB9-88829471ED32"><h5 class="icon-notebook">Nota:</h5><div class="note-content">        <p id="GUID-618199AC-A90C-41B2-92C7-F2AE10E5EDE3">El siguiente cálculo solo funcionará si el campo es anulable.</p>      </div></aside><div class="codeblock">        <p class="codeblock-desc">Use Python None para calcular valores nulos.</p>        <div class="highlight"><pre><code>Analizador:
+Python
+
+Expresión:
+None
+</code></pre></div>
+
+      </div></section>  <section class="section2" purpose="relatedtopics"><h2>Temas relacionados</h2><ul class="bulleted"><li><a class="xref relatedtopic" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/fundamentals-of-field-calculations.htm">Principios de cálculos de campo</a></li><li><a class="xref relatedtopic" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/making-field-calculations-making-simple-field-calc.htm">Realizar cálculos de campo simples</a></li><li><a class="xref relatedtopic" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/calculating-area-length-and-other-geometric-properties.htm">Calcular el área, la longitud y otras propiedades geométricas</a></li><li><a class="xref relatedtopic" href="http://desktop.arcgis.com/es/arcmap/10.3/manage-data/tables/changing-the-case-of-text-field-values.htm">Cambiar las mayúsculas y minúsculas de los valores de campo de texto</a></li></ul></section>
+                    </main>
+                    <!-- ENDPAGECONTENT -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--googleoff: all-->
+      
+<footer id="footer" class="footer sticky-footer">
+  <div class="container">
+    <div class="row">
+      <nav class="column-6 tablet-column-24 leader-1">
+        <h4 data-langlabel="arcgis-for-desktop">Arc<span>GIS Desktop</span></h4>
+        <ul>
+          <li><a data-langlabel="home" href="http://desktop.arcgis.com/es/">Inicio</a></li><li><a href="http://pro.arcgis.com/es/pro-app/">ArcGIS Pro</a></li><li><a href="http://desktop.arcgis.com/es/arcmap/">ArcMap</a></li>
+          <li><a data-langlabel="documentation" href="http://desktop.arcgis.com/es/documentation/">Documentación</a></li>
+          <li><a data-langlabel="support" href="http://desktop.arcgis.com/es/support/">Soporte</a></li>
+        </ul>
+      </nav>
+
+      <nav class="column-6 tablet-column-24 leader-1">
+        <h4 data-langlabel="arcgis-platform">Plataforma ArcGIS</h4>
+        <ul>
+          <li><a data-langlabel="arcgis" href="http://www.arcgis.com/">ArcGIS Online</a></li>
+          <li><a data-langlabel="arcgis-for-desktop" href="http://desktop.arcgis.com/">ArcGIS Desktop</a></li>
+          <li><a data-langlabel="arcgis-for-server" href="http://enterprise.arcgis.com/">ArcGIS Enterprise</a></li>
+          <li><a data-langlabel="arcgis-for-developers" href="https://developers.arcgis.com/">ArcGIS for Developers</a></li>
+          <li><a data-langlabel="arcgis-solutions" href="http://solutions.arcgis.com/">ArcGIS Solutions</a></li>
+          <li><a data-langlabel="arcgis-marketplace" href="http://marketplace.arcgis.com/">ArcGIS Marketplace</a></li>
+        </ul>
+      </nav>
+
+      <nav class="column-6 tablet-column-24 leader-1">
+        <h4 data-langlabel="about-esri">Acerca de Esri</h4>
+        <ul>
+          <li><a data-langlabel="about-us" href="http://www.esri.com/about-esri/">Quiénes somos</a></li>
+          <li><a data-langlabel="careers" href="http://www.esri.com/careers/">Empleo</a></li>
+          <li><a data-langlabel="insiders-blog" href="http://blogs.esri.com/esri/esri-insider/">Blog de Esri</a></li>
+          <li><a data-langlabel="user-conference" href="http://www.esri.com/events/user-conference/index.html">Conferencia de usuarios</a></li>
+          <li><a data-langlabel="developer-summit" href="http://www.esri.com/events/devsummit/index.html">Cumbre de desarrolladores</a></li>
+        </ul>
+      </nav>
+
+      <nav class="column-6 tablet-column-24 leader-1">
+        <a class="esri-logo-footer" href="http://esri.com/">Esri</a>
+        <section class="footer-social-nav">
+                <a class="icon-twitter" href="https://twitter.com/Esri/"></a>
+                <a class="icon-facebook" href="https://www.facebook.com/esrigis/"></a>
+                <a class="icon-github" href="http://esri.github.com/"></a>
+                <a class="icon-email" href="http://www.esri.com/about-esri/contact/"></a>
+        </section>
+        <section class="feedback-footer center-text">
+            <a data-langlabel="feedback-tell-us" class="feedbacklink icon-comment" href="http://desktop.arcgis.com/feedback/">Díganos su opinión.</a>
+        </section>
+      </nav>
+      <small class="footer-legal column-24 leader-1 trailer-1">Copyright © 2018 Esri. | <a data-langlabel="privacy" href="http://www.esri.com/legal/privacy">Privacidad</a> | <a data-langlabel="legal" href="http://www.esri.com/legal/software-license">Legal</a></small>
+    </div>
+
+  </div>
+</footer>
+
+
+       
+        
+       <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/tailcoat.js.descargar" type="text/javascript"></script><iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_esri_0" name="destination_publishing_iframe_esri_0_name" src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/dest5.html" style="display: none; width: 0px; height: 0px;" class="aamIframeLoaded"></iframe>
+       <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/init.js.descargar" type="text/javascript"></script>
+       <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/searchform.js.descargar" type="text/javascript"></script>
+       <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/sitewide.js.descargar" type="text/javascript"></script>
+       <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/version-switcher.js.descargar" type="text/javascript"></script>
+    
+        
+        
+      <script src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/affix.js.descargar" type="text/javascript"></script>
+      <script type="text/javascript">
+        
+
+          $(function () {
+            var appendFlg = true;
+
+            $("#bigmac")
+            .on("affixed.bs.affix", function (evt) {
+              if (appendFlg) {
+                $("<li><a href='#'>Ejemplos de Calcular campo</a></li>").insertAfter ($("#bigmac ul li").last());
+                appendFlg = false;
+              }
+              $(".back-to-top").addClass ("visible");
+            })
+            .on ("affix-top.bs.affix", function(evt) {
+              if (!appendFlg) {
+                $("#bigmac ul li").last().remove();
+              }
+              $(".back-to-top").removeClass ("visible");
+              appendFlg = true;
+            })
+          })      
+
+      
+      </script>
+      
+        <script type="text/javascript">
+          window.doctoc = {
+            pubID: "115",
+            tpcID: "50",
+            
+            hideToc : false
+          }
+        </script>
+
+        <script type="text/javascript" src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/1631.js.descargar"></script>
+        <script type="text/javascript" src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/115.js.descargar"></script>
+        <script type="text/javascript" src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/protoc.js.descargar"></script>
+
+        
+    
+        
+       
+       <script type="text/javascript">_satellite.pageBottom();</script>
+       
+     <iframe src="./Ejemplos de Calcular campo—Ayuda _ ArcGIS Desktop_files/satellite-5b03621d64746d0ab7009092.html" style="display: none;"></iframe><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><button type="button" id="cboxClose"></button></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div></body></html>

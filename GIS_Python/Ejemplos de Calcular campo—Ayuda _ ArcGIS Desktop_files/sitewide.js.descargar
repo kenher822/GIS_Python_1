@@ -1,0 +1,66 @@
+/*This is a common script for all our sites.
+*/
+
+
+
+
+
+
+$(document).ready(function () {
+	commonJS.injectNavActiveClass();
+	//Workaround to hide empty "in this topic" block. 
+	$("#main-toc-large ol:empty").parent().hide();
+});
+
+
+
+(function () {
+
+	window.commonJS = {
+		
+		// Inject active class to to nav link on the basis of site and path
+		injectNavActiveClass: function (){
+			var winloc = window.location
+			// Doc site.
+			if(winloc.host.indexOf("doc") >= 0){
+				if(winloc.pathname.match( /(\/arcgis-online\/)/)){
+					$("#nav-help").addClass("active");
+				}
+				//For Living Atlas docs only.
+				if(winloc.pathname.match( /(\/living-atlas\/)/)){
+					$(".navigation-bar .container h1 > a").attr("href", $(".navigation-bar .container h1 > a").attr("href") + "/about")
+				}
+			}
+
+			// Learn site.
+			if(winloc.host.indexOf("learn") >= 0){
+				if(winloc.pathname.match( /(\/support\/)/)){
+					$("#nav-support").closest("li").addClass("is-active")
+				}else if(winloc.pathname.match( /(\/gallery\/)/)){
+					$("#nav-gallery").closest("li").addClass("is-active")
+				}
+			}
+			
+			//desktop site . This condition is specific to 10.3 content.
+			if(winloc.host.indexOf("desktop") >= 0){
+				if(winloc.pathname.match( /(\/10.3\/)/)){
+					var bluBarTitle = (window.docConfig && window.localeJsonObj[docConfig['locale'].toLowerCase()]['arcgis-desktop'])?window.localeJsonObj[docConfig['locale'].toLowerCase()]['arcgis-desktop'] : "ArcMap";
+					var helpStr = (window.docConfig && window.localeJsonObj[docConfig['locale'].toLowerCase()]['help'])?window.localeJsonObj[docConfig['locale'].toLowerCase()]['help'] : "help";
+
+					if($(".navigation-bar .container h1 > a").text() === helpStr || $(".navigation-bar .container h1 > a").text() === "Help") {
+						$(".navigation-bar .container h1 > a").text(bluBarTitle);
+					}
+				}
+				if(winloc.pathname.match( /(\/en\/)/) && winloc.pathname.match( /(\/latest\/)/)){
+					if($(".site-search-form .site-search-input").length > 0){
+						var searchPlaceholderStr = $(".site-search-form .site-search-input").attr("placeholder").replace("10.5", "10.6");
+						$(".site-search-form .site-search-input").attr("placeholder", searchPlaceholderStr)
+					}
+				}
+			}
+			
+		}
+	}
+ 
+})()
+;

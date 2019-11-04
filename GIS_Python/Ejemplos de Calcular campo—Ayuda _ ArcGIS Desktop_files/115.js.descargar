@@ -1,0 +1,715 @@
+;(function (){
+          treedata = (window.treedata || {});
+          treedata.data["root_115"]  = {  
+              "parent" : "",
+              "children" : ["115_1","115_2","115_3","115_4","115_5","115_6","115_h0","115_h1","115_h5","115_h10","115_h11","115_h12","115_h14"]
+            },
+treedata.data["115_1"]  = {
+            "parent" : "root_115",
+            "label" : "¿Qué son las tablas y la información de atributos?",
+            "url" : "/es/arcmap/10.3/manage-data/tables/what-are-tables-and-attribute-information.htm"
+            
+          },
+treedata.data["115_2"]  = {
+            "parent" : "root_115",
+            "label" : "Un recorrido rápido por la información de atributos y tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/a-quick-tour-of-tables-and-attribute-information.htm"
+            
+          },
+treedata.data["115_3"]  = {
+            "parent" : "root_115",
+            "label" : "Vocabulario esencial de información de atributos y tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/essential-table-and-attribute-information-vocabulary.htm"
+            
+          },
+treedata.data["115_4"]  = {
+            "parent" : "root_115",
+            "label" : "Fuentes de datos tabulares",
+            "url" : "/es/arcmap/10.3/manage-data/tables/tabular-data-sources.htm"
+            
+          },
+treedata.data["115_5"]  = {
+            "parent" : "root_115",
+            "label" : "Tareas comunes de tablas y atributos",
+            "url" : "/es/arcmap/10.3/manage-data/tables/common-tables-and-attributes-tasks.htm"
+            
+          },
+treedata.data["115_6"]  = {
+            "parent" : "root_115",
+            "label" : "Accesos directos de teclado para trabajar con tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/keyboard-shortcuts-for-working-with-tables.htm"
+            
+          },
+treedata.data["115_h0"]  = { 
+              "parent" : "root_115",
+              "label" : "Diseñar una tabla",
+              "children" : ["115_7","115_8","115_9","115_10","115_11","115_12","115_13"]
+            }
+            ,
+treedata.data["115_7"]  = {
+            "parent" : "115_h0",
+            "label" : "Información general de propiedades de tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/design-an-overview-of-table-properties.htm"
+            
+          },
+treedata.data["115_8"]  = {
+            "parent" : "115_h0",
+            "label" : "Diseñar tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/designing-tables-in-the-geodatabase.htm"
+            
+          },
+treedata.data["115_9"]  = {
+            "parent" : "115_h0",
+            "label" : "Elementos especiales de las tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/special-elements-of-tables.htm"
+            
+          },
+treedata.data["115_10"]  = {
+            "parent" : "115_h0",
+            "label" : "Definir tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/defining-tables.htm"
+            
+          },
+treedata.data["115_11"]  = {
+            "parent" : "115_h0",
+            "label" : "Definir campos en tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/design-defining-fields-in-tables.htm"
+            
+          },
+treedata.data["115_12"]  = {
+            "parent" : "115_h0",
+            "label" : "Tipos de datos de campo ArcGIS",
+            "url" : "/es/arcmap/10.3/manage-data/tables/arcgis-field-data-types.htm"
+            
+          },
+treedata.data["115_13"]  = {
+            "parent" : "115_h0",
+            "label" : "Tipos de datos en el DBMS",
+            "url" : "/es/arcmap/10.3/manage-data/tables/design-data-types-in-the-dbms.htm"
+            
+          },
+treedata.data["115_h1"]  = { 
+              "parent" : "root_115",
+              "label" : "Crear y editar tablas",
+              "children" : ["115_14","115_15","115_16","115_17","115_18","115_19","115_20","115_21","115_h2","115_h3","115_36","115_37","115_h4"]
+            }
+            ,
+treedata.data["115_14"]  = {
+            "parent" : "115_h1",
+            "label" : "Creación de tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/creating-tables.htm"
+            
+          },
+treedata.data["115_15"]  = {
+            "parent" : "115_h1",
+            "label" : "Información para agregar datos a tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/how-to-add-data-to-tables.htm"
+            
+          },
+treedata.data["115_16"]  = {
+            "parent" : "115_h1",
+            "label" : "Principios de agregar y eliminar campos",
+            "url" : "/es/arcmap/10.3/manage-data/tables/fundamentals-of-adding-and-deleting-fields.htm"
+            
+          },
+treedata.data["115_17"]  = {
+            "parent" : "115_h1",
+            "label" : "Agregar campos",
+            "url" : "/es/arcmap/10.3/manage-data/tables/adding-fields.htm"
+            
+          },
+treedata.data["115_18"]  = {
+            "parent" : "115_h1",
+            "label" : "Eliminar campos",
+            "url" : "/es/arcmap/10.3/manage-data/tables/deleting-fields.htm"
+            
+          },
+treedata.data["115_19"]  = {
+            "parent" : "115_h1",
+            "label" : "Principios básicos de los campos ObjectID",
+            "url" : "/es/arcmap/10.3/manage-data/tables/fundamentals-of-objectid-fields.htm"
+            
+          },
+treedata.data["115_20"]  = {
+            "parent" : "115_h1",
+            "label" : "Agregar una tabla de archivo de texto o ASCII",
+            "url" : "/es/arcmap/10.3/manage-data/tables/adding-an-ascii-or-text-file-table.htm"
+            
+          },
+treedata.data["115_21"]  = {
+            "parent" : "115_h1",
+            "label" : "Crear índices de atributo",
+            "url" : "/es/arcmap/10.3/manage-data/tables/creating-attribute-indexes.htm"
+            
+          },
+treedata.data["115_h2"]  = { 
+              "parent" : "115_h1",
+              "label" : "Editar valores en tablas",
+              "children" : ["115_22","115_23","115_24","115_25","115_26","115_27"]
+            }
+            ,
+treedata.data["115_22"]  = {
+            "parent" : "115_h2",
+            "label" : "Información para editar los valores de una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/understanding-how-to-edit-values-in-a-table.htm"
+            
+          },
+treedata.data["115_23"]  = {
+            "parent" : "115_h2",
+            "label" : "Edición de un valor en una celda de la tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/editing-a-value-in-a-table-cell.htm"
+            
+          },
+treedata.data["115_24"]  = {
+            "parent" : "115_h2",
+            "label" : "Editar atributos con subtipos y dominios de atributo",
+            "url" : "/es/arcmap/10.3/manage-data/tables/editing-with-coded-value-domains-and-subtypes.htm"
+            
+          },
+treedata.data["115_25"]  = {
+            "parent" : "115_h2",
+            "label" : "Agregar nuevos registros a una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/adding-new-records-to-a-table.htm"
+            
+          },
+treedata.data["115_26"]  = {
+            "parent" : "115_h2",
+            "label" : "Eliminar registros en una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/deleting-records-in-a-table.htm"
+            
+          },
+treedata.data["115_27"]  = {
+            "parent" : "115_h2",
+            "label" : "Copiar y pegar registros en una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/copying-and-pasting-records-in-a-table.htm"
+            
+          },
+treedata.data["115_h3"]  = { 
+              "parent" : "115_h1",
+              "label" : "Utilizar campos de fecha",
+              "children" : ["115_28","115_114","115_33","115_34","115_35"]
+            }
+            ,
+treedata.data["115_28"]  = {
+            "parent" : "115_h3",
+            "label" : "Principios de campos de fecha",
+            "url" : "/es/arcmap/10.3/manage-data/tables/fundamentals-of-date-fields.htm"
+            
+          },
+treedata.data["115_114"]  = {
+            "parent" : "115_h3",
+            "label" : "Cambiar la forma en que ArcMap muestra las fechas de formato corto en Windows 7",
+            "url" : "/es/arcmap/10.3/manage-data/tables/working-with-date-fields-on-windows-7.htm"
+            
+          },
+treedata.data["115_33"]  = {
+            "parent" : "115_h3",
+            "label" : "Realizar cálculos de campo de fecha simples mediante el calculador de campos",
+            "url" : "/es/arcmap/10.3/manage-data/tables/working-with-date-fields-making-simple-date-field-.htm"
+            
+          },
+treedata.data["115_34"]  = {
+            "parent" : "115_h3",
+            "label" : "Calcular un atributo para el número de días entre dos fechas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/calculating-an-attribute-to-the-number-of-days-between-two-dates.htm"
+            
+          },
+treedata.data["115_35"]  = {
+            "parent" : "115_h3",
+            "label" : "Seleccionar entidades mediante un campo de fecha",
+            "url" : "/es/arcmap/10.3/manage-data/tables/selecting-features-using-a-date-field.htm"
+            
+          },
+treedata.data["115_36"]  = {
+            "parent" : "115_h1",
+            "label" : "Exportar tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/exporting-tables.htm"
+            
+          },
+treedata.data["115_37"]  = {
+            "parent" : "115_h1",
+            "label" : "Crear datos espaciales a partir de tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/creating-spatial-data-from-tables.htm"
+            
+          },
+treedata.data["115_h4"]  = { 
+              "parent" : "115_h1",
+              "label" : "Utilizar archivos de Microsoft Excel y Access",
+              "children" : ["115_38","115_39","115_40","115_41","115_42","115_43","115_44"]
+            }
+            ,
+treedata.data["115_38"]  = {
+            "parent" : "115_h4",
+            "label" : "Entender cómo usar archivos Microsoft Excel en ArcGIS",
+            "url" : "/es/arcmap/10.3/manage-data/tables/understanding-how-to-use-microsoft-excel-files-in-arcgis.htm"
+            
+          },
+treedata.data["115_39"]  = {
+            "parent" : "115_h4",
+            "label" : "Dar formato a una tabla en Microsoft Excel para su uso en ArcGIS",
+            "url" : "/es/arcmap/10.3/manage-data/tables/formatting-a-table-in-microsoft-excel-for-use-in-arcgis.htm"
+            
+          },
+treedata.data["115_40"]  = {
+            "parent" : "115_h4",
+            "label" : "Agregar una tabla de Microsoft Excel a ArcMap",
+            "url" : "/es/arcmap/10.3/manage-data/tables/adding-a-microsoft-excel-table-to-arcmap.htm"
+            
+          },
+treedata.data["115_41"]  = {
+            "parent" : "115_h4",
+            "label" : "Información para utilizar archivos de Microsoft Access en ArcGIS",
+            "url" : "/es/arcmap/10.3/manage-data/tables/understanding-how-to-use-microsoft-access-files-in-arcgis.htm"
+            
+          },
+treedata.data["115_42"]  = {
+            "parent" : "115_h4",
+            "label" : "Dar formato a una tabla en Microsoft Access para su uso en ArcGIS",
+            "url" : "/es/arcmap/10.3/manage-data/tables/formatting-a-table-in-microsoft-access-for-use-in-arcgis.htm"
+            
+          },
+treedata.data["115_43"]  = {
+            "parent" : "115_h4",
+            "label" : "Conectar con una base de datos de Microsoft Access en ArcGIS",
+            "url" : "/es/arcmap/10.3/manage-data/tables/connecting-to-a-microsoft-access-database.htm"
+            
+          },
+treedata.data["115_44"]  = {
+            "parent" : "115_h4",
+            "label" : "Conectar a una base de datos de Microsoft Access 2007 (.accdb) en ArcGIS",
+            "url" : "/es/arcmap/10.3/manage-data/tables/connecting-to-a-2007-microsoft-access-database.htm"
+            
+          },
+treedata.data["115_h5"]  = { 
+              "parent" : "root_115",
+              "label" : "Mostrar tablas",
+              "children" : ["115_66","115_67","115_68","115_69","115_70","115_h6","115_h7","115_h8","115_h9","115_104","115_105","115_106","115_107"]
+            }
+            ,
+treedata.data["115_66"]  = {
+            "parent" : "115_h5",
+            "label" : "Acerca de la previsualización de tablas en ArcCatalog",
+            "url" : "/es/arcmap/10.3/manage-data/tables/about-previewing-tables-in-arccatalog.htm"
+            
+          },
+treedata.data["115_67"]  = {
+            "parent" : "115_h5",
+            "label" : "Previsualizar una tabla en ArcCatalog",
+            "url" : "/es/arcmap/10.3/manage-data/tables/previewing-a-table-in-arccatalog.htm"
+            
+          },
+treedata.data["115_68"]  = {
+            "parent" : "115_h5",
+            "label" : "Agregar y ver tablas en ArcMap",
+            "url" : "/es/arcmap/10.3/manage-data/tables/adding-and-viewing-tables-in-arcmap.htm"
+            
+          },
+treedata.data["115_69"]  = {
+            "parent" : "115_h5",
+            "label" : "Agregar tablas a ArcMap",
+            "url" : "/es/arcmap/10.3/manage-data/tables/adding-tables-to-arcmap.htm"
+            
+          },
+treedata.data["115_70"]  = {
+            "parent" : "115_h5",
+            "label" : "Ver tablas en ArcMap",
+            "url" : "/es/arcmap/10.3/manage-data/tables/viewing-tables-in-arcmap.htm"
+            
+          },
+treedata.data["115_h6"]  = { 
+              "parent" : "115_h5",
+              "label" : "Utilizar propiedades de campo, alias y opciones de visualización de tabla",
+              "children" : ["115_71","115_73","115_74","115_75","115_76","115_77","115_78","115_79","115_80","115_81","115_82","115_72"]
+            }
+            ,
+treedata.data["115_71"]  = {
+            "parent" : "115_h6",
+            "label" : "Información sobre las propiedades de campo, alias y opciones de visualización de tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/field-properties-aliases-and-table-display-options.htm"
+            
+          },
+treedata.data["115_73"]  = {
+            "parent" : "115_h6",
+            "label" : "Establecer si los campos son visibles en una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/setting-whether-fields-are-visible-in-a-table.htm"
+            
+          },
+treedata.data["115_74"]  = {
+            "parent" : "115_h6",
+            "label" : "Establecer alias de campo en tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/setting-field-aliases-in-tables.htm"
+            
+          },
+treedata.data["115_75"]  = {
+            "parent" : "115_h6",
+            "label" : "Dar formato a campos numéricos en tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/formatting-numeric-fields-in-tables.htm"
+            
+          },
+treedata.data["115_76"]  = {
+            "parent" : "115_h6",
+            "label" : "Establecer el color de selección y resaltado de las tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/setting-the-selection-and-highlight-color-for-tables.htm"
+            
+          },
+treedata.data["115_77"]  = {
+            "parent" : "115_h6",
+            "label" : "Establecer opciones generales de visualización de tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/setting-general-table-display-options.htm"
+            
+          },
+treedata.data["115_78"]  = {
+            "parent" : "115_h6",
+            "label" : "Cambiar el ancho de columnas de una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/changing-the-width-of-columns-in-a-table.htm"
+            
+          },
+treedata.data["115_79"]  = {
+            "parent" : "115_h6",
+            "label" : "Reorganizar las columnas de una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/rearranging-the-columns-in-a-table.htm"
+            
+          },
+treedata.data["115_80"]  = {
+            "parent" : "115_h6",
+            "label" : "Inmovilizar una columna en una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/freezing-a-column-in-a-table.htm"
+            
+          },
+treedata.data["115_81"]  = {
+            "parent" : "115_h6",
+            "label" : "Utilizar la ficha Campos",
+            "url" : "/es/arcmap/10.3/manage-data/tables/using-the-fields-tab.htm"
+            
+          },
+treedata.data["115_82"]  = {
+            "parent" : "115_h6",
+            "label" : "Información sobre la expresión de visualización de un campo",
+            "url" : "/es/arcmap/10.3/manage-data/tables/understanding-the-display-expression-for-a-field.htm"
+            
+          },
+treedata.data["115_72"]  = {
+            "parent" : "115_h6",
+            "label" : "Establecer la expresión de visualización de un campo",
+            "url" : "/es/arcmap/10.3/manage-data/tables/setting-the-display-expression-for-a-field.htm"
+            
+          },
+treedata.data["115_h7"]  = { 
+              "parent" : "115_h5",
+              "label" : "Buscar y visualizar registros en una tabla",
+              "children" : ["115_84","115_85","115_86","115_88","115_89"]
+            }
+            ,
+treedata.data["115_84"]  = {
+            "parent" : "115_h7",
+            "label" : "Información para buscar y ver registros en tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/understanding-how-to-find-and-view-records-in-tables.htm"
+            
+          },
+treedata.data["115_85"]  = {
+            "parent" : "115_h7",
+            "label" : "Desplazarse a un número de registro concreto",
+            "url" : "/es/arcmap/10.3/manage-data/tables/moving-to-a-specific-record-number.htm"
+            
+          },
+treedata.data["115_86"]  = {
+            "parent" : "115_h7",
+            "label" : "Buscar registros con valores determinados en la ventana Tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/finding-records-with-particular-values.htm"
+            
+          },
+treedata.data["115_88"]  = {
+            "parent" : "115_h7",
+            "label" : "Hacer parpadear, hacer zoom y desplazar el mapa por registros concretos",
+            "url" : "/es/arcmap/10.3/manage-data/tables/flash-zoom-and-pan-the-map-by-specific-records.htm"
+            
+          },
+treedata.data["115_89"]  = {
+            "parent" : "115_h7",
+            "label" : "Utilizar la rueda del ratón con la ventana Tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/using-the-mouse-wheel-with-the-table-window.htm"
+            
+          },
+treedata.data["115_h8"]  = { 
+              "parent" : "115_h5",
+              "label" : "Ordenar registros en una tabla",
+              "children" : ["115_90","115_91","115_92","115_93"]
+            }
+            ,
+treedata.data["115_90"]  = {
+            "parent" : "115_h8",
+            "label" : "Acerca de la ordenación de registros en tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/about-sorting-records-in-tables.htm"
+            
+          },
+treedata.data["115_91"]  = {
+            "parent" : "115_h8",
+            "label" : "Ordenar los registros de una tabla por un campo",
+            "url" : "/es/arcmap/10.3/manage-data/tables/sorting-records-in-a-table-by-one-field.htm"
+            
+          },
+treedata.data["115_92"]  = {
+            "parent" : "115_h8",
+            "label" : "Ordenar los registros de una tabla por varios campos",
+            "url" : "/es/arcmap/10.3/manage-data/tables/sorting-records-in-a-table-by-multiple-fields.htm"
+            
+          },
+treedata.data["115_93"]  = {
+            "parent" : "115_h8",
+            "label" : "Quitar el orden de una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/removing-table-sorting.htm"
+            
+          },
+treedata.data["115_h9"]  = { 
+              "parent" : "115_h5",
+              "label" : "Seleccionar registros de una tabla",
+              "children" : ["115_95","115_96","115_97","115_98","115_99","115_100","115_101","115_102","115_103"]
+            }
+            ,
+treedata.data["115_95"]  = {
+            "parent" : "115_h9",
+            "label" : "Selección de registros en tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/selecting-records-in-tables.htm"
+            
+          },
+treedata.data["115_96"]  = {
+            "parent" : "115_h9",
+            "label" : "Ver todos o solo los registros seleccionados",
+            "url" : "/es/arcmap/10.3/manage-data/tables/viewing-all-or-only-the-selected-records.htm"
+            
+          },
+treedata.data["115_97"]  = {
+            "parent" : "115_h9",
+            "label" : "Seleccionar registros en una tabla de forma interactiva",
+            "url" : "/es/arcmap/10.3/manage-data/tables/interactively-selecting-records-in-a-table.htm"
+            
+          },
+treedata.data["115_98"]  = {
+            "parent" : "115_h9",
+            "label" : "Seleccionar registros de una tabla por atributos",
+            "url" : "/es/arcmap/10.3/manage-data/tables/selecting-records-in-a-table-by-attributes.htm"
+            
+          },
+treedata.data["115_99"]  = {
+            "parent" : "115_h9",
+            "label" : "Seleccionar todos los registros de una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/selecting-all-records-in-a-table.htm"
+            
+          },
+treedata.data["115_100"]  = {
+            "parent" : "115_h9",
+            "label" : "Borrar el conjunto seleccionado en una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/clearing-the-selected-set-in-a-table.htm"
+            
+          },
+treedata.data["115_101"]  = {
+            "parent" : "115_h9",
+            "label" : "Cambiar el conjunto seleccionado en una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/switching-the-selected-set-in-a-table.htm"
+            
+          },
+treedata.data["115_102"]  = {
+            "parent" : "115_h9",
+            "label" : "Quitar registros del conjunto seleccionado en la vista Mostrar registros seleccionados",
+            "url" : "/es/arcmap/10.3/manage-data/tables/removing-records-from-the-selected-set.htm"
+            
+          },
+treedata.data["115_103"]  = {
+            "parent" : "115_h9",
+            "label" : "Copiar registros para pegarlos en otras aplicaciones",
+            "url" : "/es/arcmap/10.3/manage-data/tables/copying-records-for-pasting-into-other-applications.htm"
+            
+          },
+treedata.data["115_104"]  = {
+            "parent" : "115_h5",
+            "label" : "Volver a cargar la caché de la tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/refreshing-a-table.htm"
+            
+          },
+treedata.data["115_105"]  = {
+            "parent" : "115_h5",
+            "label" : "Resumir los datos de una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/summarizing-data-in-a-table.htm"
+            
+          },
+treedata.data["115_106"]  = {
+            "parent" : "115_h5",
+            "label" : "Agregar una tabla a un diseño",
+            "url" : "/es/arcmap/10.3/manage-data/tables/adding-a-table-to-a-layout.htm"
+            
+          },
+treedata.data["115_107"]  = {
+            "parent" : "115_h5",
+            "label" : "Ver las estadísticas de una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/viewing-statistics-for-a-table.htm"
+            
+          },
+treedata.data["115_h10"]  = { 
+              "parent" : "root_115",
+              "label" : "Calcular valores de campo",
+              "children" : ["115_45","115_46","115_47","115_48","115_49","115_50"]
+            }
+            ,
+treedata.data["115_45"]  = {
+            "parent" : "115_h10",
+            "label" : "Principios de cálculos de campo",
+            "url" : "/es/arcmap/10.3/manage-data/tables/fundamentals-of-field-calculations.htm"
+            
+          },
+treedata.data["115_46"]  = {
+            "parent" : "115_h10",
+            "label" : "Realizar cálculos de campo simples",
+            "url" : "/es/arcmap/10.3/manage-data/tables/making-field-calculations-making-simple-field-calc.htm"
+            
+          },
+treedata.data["115_47"]  = {
+            "parent" : "115_h10",
+            "label" : "Calcular el área, la longitud y otras propiedades geométricas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/calculating-area-length-and-other-geometric-properties.htm"
+            
+          },
+treedata.data["115_48"]  = {
+            "parent" : "115_h10",
+            "label" : "Cambiar las mayúsculas y minúsculas de los valores de campo de texto",
+            "url" : "/es/arcmap/10.3/manage-data/tables/changing-the-case-of-text-field-values.htm"
+            
+          },
+treedata.data["115_49"]  = {
+            "parent" : "115_h10",
+            "label" : "Utilizar la herramienta Calcular campo",
+            "url" : "/es/arcmap/10.3/manage-data/tables/using-the-calculate-field-tool.htm"
+            
+          },
+treedata.data["115_50"]  = {
+            "parent" : "115_h10",
+            "label" : "Ejemplos de Calcular campo",
+            "url" : "/es/arcmap/10.3/manage-data/tables/calculate-field-examples.htm"
+            
+          },
+treedata.data["115_h11"]  = { 
+              "parent" : "root_115",
+              "label" : "Unir y relacionar tablas por atributos",
+              "children" : ["115_51","115_52","115_53","115_54","115_56","115_57","115_58","115_59"]
+            }
+            ,
+treedata.data["115_51"]  = {
+            "parent" : "115_h11",
+            "label" : "Acerca de unir y relacionar tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/about-joining-and-relating-tables.htm"
+            
+          },
+treedata.data["115_52"]  = {
+            "parent" : "115_h11",
+            "label" : "Puntos fundamentales sobre la unión de tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/essentials-of-joining-tables.htm"
+            
+          },
+treedata.data["115_53"]  = {
+            "parent" : "115_h11",
+            "label" : "Unir atributos de una tabla a otra",
+            "url" : "/es/arcmap/10.3/manage-data/tables/joining-attributes-in-one-table-to-another.htm"
+            
+          },
+treedata.data["115_54"]  = {
+            "parent" : "115_h11",
+            "label" : "Administrar tablas unidas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/managing-joined-tables.htm"
+            
+          },
+treedata.data["115_56"]  = {
+            "parent" : "115_h11",
+            "label" : "Aspectos básicos de la relación de tablas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/essentials-of-relating-tables.htm"
+            
+          },
+treedata.data["115_57"]  = {
+            "parent" : "115_h11",
+            "label" : "Relacionar los atributos de una tabla con otra",
+            "url" : "/es/arcmap/10.3/manage-data/tables/relating-the-attributes-in-one-table-to-another.htm"
+            
+          },
+treedata.data["115_58"]  = {
+            "parent" : "115_h11",
+            "label" : "Acceder a registros relacionados",
+            "url" : "/es/arcmap/10.3/manage-data/tables/accessing-related-records.htm"
+            
+          },
+treedata.data["115_59"]  = {
+            "parent" : "115_h11",
+            "label" : "Administrar tablas relacionadas",
+            "url" : "/es/arcmap/10.3/manage-data/tables/managing-related-tables.htm"
+            
+          },
+treedata.data["115_h12"]  = { 
+              "parent" : "root_115",
+              "label" : "Unir tablas por consulta espacial",
+              "children" : ["115_61","115_62","115_h13"]
+            }
+            ,
+treedata.data["115_61"]  = {
+            "parent" : "115_h12",
+            "label" : "Unir los atributos de entidades por su ubicación",
+            "url" : "/es/arcmap/10.3/manage-data/tables/about-joining-the-attributes-of-features-by-their-location.htm"
+            
+          },
+treedata.data["115_62"]  = {
+            "parent" : "115_h12",
+            "label" : "Uniones espaciales según el tipo de entidad",
+            "url" : "/es/arcmap/10.3/manage-data/tables/spatial-joins-by-feature-type.htm"
+            
+          },
+treedata.data["115_h13"]  = { 
+              "parent" : "115_h12",
+              "label" : "Unión espacial de atributos y entidades al",
+              "children" : ["115_63","115_64","115_65"]
+            }
+            ,
+treedata.data["115_63"]  = {
+            "parent" : "115_h13",
+            "label" : "...encontrar la entidad más cercana",
+            "url" : "/es/arcmap/10.3/manage-data/tables/finding-the-nearest-feature.htm"
+            
+          },
+treedata.data["115_64"]  = {
+            "parent" : "115_h13",
+            "label" : "...encontrar lo que hay dentro de un polígono",
+            "url" : "/es/arcmap/10.3/manage-data/tables/finding-what-is-inside-a-polygon.htm"
+            
+          },
+treedata.data["115_65"]  = {
+            "parent" : "115_h13",
+            "label" : "...encontrar lo que intersecta una entidad",
+            "url" : "/es/arcmap/10.3/manage-data/tables/finding-what-intersects-a-feature.htm"
+            
+          },
+treedata.data["115_h14"]  = { 
+              "parent" : "root_115",
+              "label" : "Crear resultados a partir de las tablas",
+              "children" : ["115_108","115_109","115_110","115_111"]
+            }
+            ,
+treedata.data["115_108"]  = {
+            "parent" : "115_h14",
+            "label" : "Información para imprimir una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/understanding-how-to-print-a-table.htm"
+            
+          },
+treedata.data["115_109"]  = {
+            "parent" : "115_h14",
+            "label" : "Imprimir una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/printing-a-table.htm"
+            
+          },
+treedata.data["115_110"]  = {
+            "parent" : "115_h14",
+            "label" : "Establecer opciones avanzadas para imprimir una tabla de atributos",
+            "url" : "/es/arcmap/10.3/manage-data/tables/setting-advanced-printing-options-for-printing-a-table.htm"
+            
+          },
+treedata.data["115_111"]  = {
+            "parent" : "115_h14",
+            "label" : "Crear un gráfico a partir de una tabla",
+            "url" : "/es/arcmap/10.3/manage-data/tables/creating-a-graph-from-a-table.htm"
+            
+          }
+        })()

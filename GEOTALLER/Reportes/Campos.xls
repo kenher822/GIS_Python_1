@@ -1,0 +1,30 @@
+FeatureClass	Tipo de Geometría	Campo	Tipo de datos
+Estaciones	Point
+		OBJECTID	OID
+		NOM_ESTAC	String
+		COD_ESTAC	String
+		Shape	Geometry
+EstacionesBuffer1km	Polygon
+		OBJECTID	OID
+		Shape	Geometry
+		NOM_ESTAC	String
+		COD_ESTAC	String
+		BUFF_DIST	Double
+		Shape_Length	Double
+		Shape_Area	Double
+Estaciones500Mts	Polygon
+		OBJECTID	OID
+		Shape	Geometry
+		NOM_ESTAC	String
+		COD_ESTAC	String
+		BUFF_DIST	Double
+		Shape_Length	Double
+		Shape_Area	Double
+EstacionesBuffer5Km	Polygon
+		OBJECTID	OID
+		Shape	Geometry
+		NOM_ESTAC	String
+		COD_ESTAC	String
+		BUFF_DIST	Double
+		Shape_Length	Double
+		Shape_Area	Double

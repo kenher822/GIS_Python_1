@@ -1,0 +1,5 @@
+FeatureClass	Tipo de Geometría
+Estaciones	Point
+EstacionesBuffer1km	Polygon
+Estaciones500Mts	Polygon
+EstacionesBuffer5Km	Polygon

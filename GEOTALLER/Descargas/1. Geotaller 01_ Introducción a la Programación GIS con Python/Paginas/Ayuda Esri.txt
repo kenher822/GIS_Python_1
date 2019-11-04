@@ -1,0 +1,12 @@
+Propiedades del FeatureClass para el uso de la función Describe
+==============================================
+
+http://resources.arcgis.com/EN/HELP/MAIN/10.1/index.html#/FeatureClass_properties/018v00000011000000/
+
+ListFeatureClasses
+==================
+http://resources.arcgis.com/EN/HELP/MAIN/10.2/index.html#//03q300000023000000
+
+ListFields
+==========
+http://resources.arcgis.com/EN/HELP/MAIN/10.1/index.html#//018v00000012000000
