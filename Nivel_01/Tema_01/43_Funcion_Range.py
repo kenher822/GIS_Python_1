@@ -68,4 +68,17 @@ print "Los intervalos son: ", intervalos
 arcpy.AddField_management(fc, campoIntervalos, "TEXT","","","25")
 print "Campo creado"
 
+# Paso 09: Calcular los intervalos
+
+# Calular los intervalos dentro del campo potencia
+with arcpy.da.UpdateCursor(fc, ["Potencia","Intervalos"]) as cursor:
+    for row in cursor:
+        if row[0] in range(5,40):
+            row[1] = intervalos[0]
+        else:
+            row[1] = "Sin rango"
+        cursor.updateRow(row)
+
+
+print "Codigo terminado"
 
