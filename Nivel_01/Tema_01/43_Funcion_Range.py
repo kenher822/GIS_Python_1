@@ -77,11 +77,11 @@ with arcpy.da.UpdateCursor(fc, ["Potencia","Intervalos"]) as cursor:
             row[1] = intervalos[0]
         elif row[0] in range(40,75):
             row[1] = intervalos[1]
-        elif row[0] = range(75,110):
+        elif row[0] in range(75,110):
             row[1] = intervalos[2]
-        elif row[0] = range(110, 145):
+        elif row[0] in range(110, 145):
             row[1] = intervalos[3]
-        elif row[0] = range(145,180):
+        elif row[0] in range(145,180):
             row[1] = intervalos[4]
         else:
             row[1] = "Sin rango"
