@@ -1,0 +1,16 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Name>Mis Herramientas</Name><AddInID>{09fa9b23-7190-42bd-b977-3f17ebf8db84}</AddInID><Description>Herramienta personalizada</Description><Version>0.1</Version><Image>Images\pngocean.com-id-ewfoh.png</Image><Author>Kennett Herrera</Author><Company>CAEG</Company><Date>11/04/2019</Date><Targets><Target name="Desktop" version="10.1" /></Targets><AddIn language="PYTHON" library="Herramienta_addin.py" namespace="Herramienta_addin"><ArcMap>
+    <Commands>
+        <Button caption="Ayuda" category="Mis Herramientas" class="ButtonClass1" id="Herramienta_addin.button_Ayuda" image="Images\pngocean.com-id-zzcsu.png" message="Ayuda" tip="Ayuda de la herramienta"><Help heading="" /></Button>
+        <Button caption="Buffer" category="Mis Herramientas" class="ButtonClass7" id="Herramienta_addin.button_Buffer" image="Images\icons8_restore_window_24px.png" message="Buffer: Crea un elemento a una distancia indicada" tip="Herramienta Buffer "><Help heading="" /></Button>
+        <Button caption="Activar capas" category="Mis Herramientas" class="ButtonClass8" id="Herramienta_addin.button_Activar_Capas" image="Images\three-layers.png" message="Activa las capas que se encuentran en el visor del mapa" tip="Herramienta para activar capas"><Help heading="" /></Button>
+        <Button caption="Desactivar capas" category="Mis Herramientas" class="ButtonClass15" id="Herramienta_addin.button_Desactivar_Capas" image="Images\pngocean.com-id-ckamw.png" message="Desactivar las capas que se encuentran en el visor del mapa" tip="Herramienta para desactivar las capas"><Help heading="" /></Button>
+        <Button caption="Generar ID Masivo" category="Mis Herramientas" class="ButtonClass16" id="Herramienta_addin.button_GenerarID" image="Images\icons8-menu-filled-32.png" message="Generar ID masivo para los registros de una capa indicada" tip="Herramienta para generar ID masivo"><Help heading="" /></Button>
+        </Commands>
+    <Extensions>
+        </Extensions>
+    <Toolbars>
+        <Toolbar caption="GIS Resources" category="Mis Herramientas" id="Herramienta_addin.toolbar" showInitially="true"><Items><Button refID="Herramienta_addin.button_Ayuda" /><Button refID="Herramienta_addin.button_Buffer" /><Button refID="Herramienta_addin.button_Activar_Capas" /><Button refID="Herramienta_addin.button_Desactivar_Capas" /><Button refID="Herramienta_addin.button_GenerarID" /></Items></Toolbar>
+        </Toolbars>
+    <Menus>
+        </Menus>
+    </ArcMap></AddIn></ESRI.Configuration>
