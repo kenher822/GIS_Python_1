@@ -13,9 +13,8 @@ class ButtonClass15(object):
     """Implementation for Herramienta_addin.button_Desactivar_Capas (Button)"""
     def __init__(self):
         self.enabled = True
-        self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(r"D:\Proyectos\GIS_Python_1\Nivel_01\Tema_15\Modelos\ModeloConParametros_Buffer.tbx", "Buffer")
 
 class ButtonClass16(object):
     """Implementation for Herramienta_addin.button_GenerarID (Button)"""
