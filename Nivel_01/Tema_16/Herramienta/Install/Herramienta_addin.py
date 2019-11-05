@@ -27,15 +27,15 @@ class ButtonClass16(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pythonaddins.GPToolDialog(r"D:\Proyectos\GIS_Python_1\Nivel_01\Tema_15\Modelos\ModeloConParametros_Buffer.tbx", "GenerarIdMasivo")
-
+        pythonaddins.GPToolDialog(r"D:\Proyectos\GIS_Python_1\Nivel_01\Tema_15\Modelos\ModeloConParametros.tbx", "GenerarIDMasivo")
+        
 class ButtonClass7(object):
     """Implementation for Herramienta_addin.button_Buffer (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pythonaddins.GPToolDialog(r"D:\Proyectos\GIS_Python_1\Nivel_01\Tema_15\Modelos\ModeloConParametros_Buffer.tbx", "Buffer")
+        pythonaddins.GPToolDialog(r"D:\Proyectos\GIS_Python_1\Nivel_01\Tema_15\Modelos\ModeloConParametros.tbx", "Buffer")
 
 class ButtonClass8(object):
     """Implementation for Herramienta_addin.button_Activar_Capas (Button)"""
