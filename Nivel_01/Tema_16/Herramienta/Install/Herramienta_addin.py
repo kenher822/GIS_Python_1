@@ -14,7 +14,12 @@ class ButtonClass15(object):
     def __init__(self):
         self.enabled = True
     def onClick(self):
-        pythonaddins.GPToolDialog(r"D:\Proyectos\GIS_Python_1\Nivel_01\Tema_15\Modelos\ModeloConParametros_Buffer.tbx", "Buffer")
+        proyectoMXD=arcpy.mapping.MapDocument("Current")
+        listadecapas=arcpy.mapping.ListLayers(proyectoMXD)
+        for capa in listadecapas:
+            capa.visible = False
+        arcpy.RefreshActiveView()
+        arcpy.RefreshTOC()
 
 class ButtonClass16(object):
     """Implementation for Herramienta_addin.button_GenerarID (Button)"""
@@ -22,7 +27,7 @@ class ButtonClass16(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(r"D:\Proyectos\GIS_Python_1\Nivel_01\Tema_15\Modelos\ModeloConParametros_Buffer.tbx", "GenerarIdMasivo")
 
 class ButtonClass7(object):
     """Implementation for Herramienta_addin.button_Buffer (Button)"""
@@ -30,7 +35,7 @@ class ButtonClass7(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(r"D:\Proyectos\GIS_Python_1\Nivel_01\Tema_15\Modelos\ModeloConParametros_Buffer.tbx", "Buffer")
 
 class ButtonClass8(object):
     """Implementation for Herramienta_addin.button_Activar_Capas (Button)"""
@@ -38,4 +43,9 @@ class ButtonClass8(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        proyectoMXD=arcpy.mapping.MapDocument("Current")
+        listadecapas=arcpy.mapping.ListLayers(proyectoMXD)
+        for capa in listadecapas:
+            capa.visible = True
+        arcpy.RefreshActiveView()
+        arcpy.RefreshTOC()
