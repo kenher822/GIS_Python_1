@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 #
 # sin titulo.py
 # Copyright 2018 https://pythones.net
@@ -12,10 +12,11 @@ que admite como parámetro un conjunto de listas, veámoslo en un ejemplo fusion
 para crear un diccionario:
 '''
 
-L1 = ['María', 'Juan', 'Pedro'] # Listas con los nombre
-LEdades = [14,16,18] # Lista con las edades
-diccionario = (dict(zip(L1,LEdades))) # Creamos un diccionario fusionando con zip()
-print(diccionario,"\n")
+L1 = ['María', 'Juan', 'Pedro']  # Listas con los nombre
+LEdades = [14, 16, 18]  # Lista con las edades
+# Creamos un diccionario fusionando con zip()
+diccionario = (dict(zip(L1, LEdades)))
+print(diccionario, "\n")
 
 #################################################################################################
 '''
@@ -27,8 +28,32 @@ o valor. O para ambos podemos utilizar el método items().
 Iterando las claves de un diccionario
 '''
 
-semaforo = {'Rojo': 'Detenerso', 'Amarillo':'Despacio','Verde':'Avance'}
+semaforo = {'Rojo': 'Detenerse', 'Amarillo': 'Despacio', 'Verde': 'Avance'}
 colores = semaforo.keys()
 for color in colores:
-    print(color, "\n")
+    print(color)
+print("\n")
+'''
+Si almacenamos en una variable las claves mediante el método keys obtenemos una vista del 
+diccionario que nos permite trabajar solo con las claves y nos presenta la ventaja de que
+al cambiar un elemento del diccionario automáticamente se actualizara...
+Iterando los valores de un diccionario
+'''
 
+acciones = semaforo.values()
+for accion in acciones:
+    print(accion)
+print("\n")
+
+'''
+Si almacenamos en una variable los valores mediante el método values obtenemos una vista del
+diccionario que nos permite trabajar solo con los valores y nos presenta la ventaja de que 
+al cambiar un elemento del diccionario automáticamente se actualizara..
+Iterando ambos, claves y valores de un diccionario
+'''
+
+# Creamos la variable elementos que almacena la clave(key) y valor (values)
+elementos = semaforo.items()
+for k, v in elementos:
+    # Imprimimos k(key) y su respectivo v(value)
+    print((k), ('significa'), (v))
